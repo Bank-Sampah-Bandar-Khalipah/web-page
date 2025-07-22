@@ -41,7 +41,7 @@ const kegiatan = [
 
 const KegiatanCard = () => {
   return (
-    <section className="container mx-auto px-7 mt-10">
+    <section className="container mx-auto section-spacing">
         <div className="flex items-center px-7">
             <ul className="flex items-center gap-6">
                 <li className="bg-[#DFE9F8] p-4 rounded-full"><a href="" className="font-semibold">Lihat Semua</a></li>
@@ -50,12 +50,12 @@ const KegiatanCard = () => {
             </ul>
         </div>
 
-        <div className="grid grid-cols-3 mt-20 px-10 gap-10">
+        <div className="grid grid-cols-3 mt-10 px-10 gap-10">
             {kegiatan.map((item) => (
                 <div key={item.id} className='text-2xl space-y-4 rounded-md shadow-md'>
                     <img src={item.gambar} alt="Kegiatan Image" className='rounded-md'/>
                         <p className='font-semibold px-4'>{item.name}</p>
-                        <p className='text-base/loose opacity-50 px-4'>{item.desc}</p>
+                        <p className='text-base opacity-50 px-4'>{item.desc}</p>
                 </div>
             ))}
         </div>
