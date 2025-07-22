@@ -13,7 +13,7 @@ const Navbar = () => {
     const navItems = [
         {path: "/", label: "Home"},
         {path: "/about", label: "Tentang Kami"},
-        {path: "/edu", label: "Edukasi Sampah"},
+        {path: "/kegiatan", label: "Edukasi Sampah"},
         {path: "/price", label: "Daftar Harga"},
     ]
 
