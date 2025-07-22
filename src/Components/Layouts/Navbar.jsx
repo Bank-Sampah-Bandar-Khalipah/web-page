@@ -13,7 +13,7 @@ const Navbar = () => {
     const navItems = [
         {path: "/", label: "Home"},
         {path: "/about", label: "Tentang Kami"},
-        {path: "/edu", label: "Edukasi Sampah"},
+        {path: "/kegiatan", label: "Edukasi Sampah"},
         {path: "/price", label: "Daftar Harga"},
     ]
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Link
                     key={index}
                     to={link.path}
-                    className={`after:transition-all ${activeLink === link.path ? "active" : ""} font-semibold`}
+                    className={`after:transition-all ${activeLink === link.path ? "active" : ""}`}
                     >
                     {link.label}
                     </Link> 
