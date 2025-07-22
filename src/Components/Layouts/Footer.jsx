@@ -17,7 +17,7 @@ const Footer = () => {
     
   return (
     <section className='container mx-auto section-spacing bg-[#DFE9F8]'>
-        <div className='bg-white rounded-md shadow-2xl p-5 justify-between'>
+        <div className='bg-white rounded-3xl shadow-2xl p-10 justify-between'>
             <div className='flex gap-5'>
                 <div className='space-y-2'>
                     <h1 className='text-2xl font-bold'>LOGO</h1>

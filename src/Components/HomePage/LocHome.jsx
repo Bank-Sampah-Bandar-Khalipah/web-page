@@ -38,12 +38,12 @@ const LocHome = () => {
         title: "Alamat",
         desc: (
         <a
-            href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya,+Jakarta,+Indonesia"
+            href="https://maps.app.goo.gl/fj3w727bpFS6uNsn7"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
         >
-            Jl. Raya, Jakarta, Indonesia
+            Bandar Khalipah, Kec. Percut Sei Tuan 
         </a>
         ),
     },
