@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroImage from '../../assets/images/sampah.webp'
 
 const HeroHome = () => {

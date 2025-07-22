@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaCube } from "react-icons/fa";
 import { FaWebflow } from "react-icons/fa6";
 
@@ -40,7 +39,7 @@ const PartnerHome = () => {
     <section className='container'>
         <div className='flex flex-col items-center justify-center gap-10 section-spacing'>
             <h1 className='text-base font-bold'>We've worked with great companies [social proof to build credibility]</h1>
-            <div className='flex gap-6'>
+            <div className='flex items-center gap-10'>
                 {partner.map((item) => (
                     <div key={item.id} className='flex items-center gap-2 text-2xl'>
                         {item.icon}

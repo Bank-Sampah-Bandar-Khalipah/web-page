@@ -1,9 +1,6 @@
-import React from 'react'
 import { FaRecycle } from "react-icons/fa";
 import { FaTrashCan } from "react-icons/fa6";
 import { FaPeopleGroup } from "react-icons/fa6";
-
-
 const layanan = [
     {
         id:1,

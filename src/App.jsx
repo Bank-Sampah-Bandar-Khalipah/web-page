@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import Home from './Page/Home.jsx'
 import About from './Page/About.jsx'
 import './App.css'
+import Kegiatan from './Page/Kegiatan.jsx'
 
 function App() {
   return (

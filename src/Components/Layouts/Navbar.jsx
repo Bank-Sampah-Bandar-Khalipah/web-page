@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Link
                     key={index}
                     to={link.path}
-                    className={`after:transition-all ${activeLink === link.path ? "active" : ""}`}
+                    className={`after:transition-all ${activeLink === link.path ? "active" : ""} font-semibold`}
                     >
                     {link.label}
                     </Link> 
