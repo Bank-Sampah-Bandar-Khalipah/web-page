@@ -12,8 +12,9 @@ const Navbar = () => {
 
     const navItems = [
         {path: "/", label: "Home"},
-        {path: "/about", label: "About"},
-        {path: "/contact", label: "Contact"},
+        {path: "/about", label: "Tentang Kami"},
+        {path: "/about", label: "Edukasi Sampah"},
+        {path: "/kegiatan", label: "Kegiatan"},
     ]
 
   return (
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <Link
                     key={index}
                     to={link.path}
-                    className={`after:transition-all ${activeLink === link.path ? "active" : ""}`}
+                    className={`after:transition-all ${activeLink === link.path ? "active" : ""} font-semibold`}
                     >
                     {link.label}
                     </Link> 
