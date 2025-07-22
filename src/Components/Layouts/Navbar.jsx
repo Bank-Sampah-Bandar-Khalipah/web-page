@@ -13,8 +13,8 @@ const Navbar = () => {
     const navItems = [
         {path: "/", label: "Home"},
         {path: "/about", label: "Tentang Kami"},
-        {path: "/about", label: "Edukasi Sampah"},
-        {path: "/kegiatan", label: "Kegiatan"},
+        {path: "/edu", label: "Edukasi Sampah"},
+        {path: "/price", label: "Daftar Harga"},
     ]
 
   return (
@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
 
             {/* Dekstop */}
-            <div className='hidden md:flex items-center gap-10'>
+            <div className='hidden md:flex items-center gap-10 font-bold'>
                 {navItems.map((link, index) => (
                     <Link
                     key={index}

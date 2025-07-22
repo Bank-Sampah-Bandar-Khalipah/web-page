@@ -10,5 +10,5 @@
 }
 
 .section-spacing {
-    @apply py-8 md:py-10 px-4 md:px-16;
+    @apply py-8 md:py-12 px-4 md:px-12;
 }
