@@ -38,7 +38,7 @@ const TargetHome = () => {
     <section className='container mx-auto section-spacing'>
       <div>
         <h1 className='text-4xl font-bold text-center'>Pencapaian Kami</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-10'>
+        <div className='grid grid-cols-2 md:grid-cols-4 mt-10 gap-5'>
           {target.map((item) => (
             <div
               key={item.id}
