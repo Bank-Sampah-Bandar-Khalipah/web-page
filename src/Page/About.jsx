@@ -1,8 +1,15 @@
 import React from 'react'
+import HeroAbout from '../Components/AboutPage/HeroAbout'
+import ProfileAbout from '../Components/AboutPage/ProfileAbout'
+import TeamAbout from '../Components/AboutPage/TeamAbout'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <HeroAbout />
+      <ProfileAbout />
+      <TeamAbout />
+    </div>
   )
 }
 

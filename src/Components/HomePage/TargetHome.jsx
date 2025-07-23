@@ -48,6 +48,8 @@ const TargetHome = () => {
                 end={item.total}
                 duration={2}
                 suffix={item.suffix}
+                enableScrollSpy
+                scrollSpyOnce
               />
               <p className='text-center text-base font-normal'>{item.desc}</p>
             </div>
@@ -65,6 +67,8 @@ const TargetHome = () => {
                   end={item.total}
                   duration={2}
                   suffix={item.suffix}
+                  enableScrollSpy
+                  scrollSpyOnce
                 />
                 <p className='text-center text-base font-normal'>{item.desc}</p>
               </div>

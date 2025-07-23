@@ -12,3 +12,7 @@
 .section-spacing {
     @apply py-8 md:py-12 px-4 md:px-12;
 }
+
+.team-spacing{
+    @apply py-8 md:py-12 pl-4 md:pl-12;
+}
