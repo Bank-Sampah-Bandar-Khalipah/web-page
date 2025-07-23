@@ -1,5 +1,6 @@
 import React from 'react'
-import HeroImage from '../../assets/images/sampah.webp'
+import HeroImage from '../../assets/images/manfaatpage/bandarkhalipah.webp'
+
 
 const HeroAbout = () => {
   return (
@@ -20,7 +21,7 @@ const HeroAbout = () => {
         {/* Teks di atas gambar */}
         <div className="relative z-10 flex h-full flex-col justify-center px-16 text-center">
           <h1 className="text-white text-xl md:text-5xl font-bold drop-shadow-md">
-            Bersama Wujudka <br />Lingkungan Bersih & Bernilai
+            Bersama Wujudkan <br />Lingkungan Bersih & Bernilai
           </h1>
           <p className="text-white mt-4 text-lg md:text-lg drop-shadow-sm">
             Setor sampah, rawat bumi, dan ubah limbah menjadi tabungan. Bergabunglah bersama kami <br />dalam gerakan sadar lingkungan di Bandar Khalipah.

@@ -1,4 +1,4 @@
-import HeroImage from '../../assets/images/sampah.webp'
+  import HeroImage from '../../assets/images/manfaatpage/bandarkhalipah2.webp'
 
 const HeroHome = () => {
   return (

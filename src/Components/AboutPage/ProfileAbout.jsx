@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from '../../assets/images/sampah.webp'
+import Image from '../../assets/images/manfaatpage/bandarkhalipah3.webp'
+
 
 const ProfileAbout = () => {
   return (

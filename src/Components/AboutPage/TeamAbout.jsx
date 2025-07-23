@@ -63,7 +63,7 @@ const TeamAbout = () => {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-16 h-16 border rounded-full object-cover"
+                      className="w-16 h-16 rounded-full object-cover"
                     />
                   </div>
                   <div className="">
