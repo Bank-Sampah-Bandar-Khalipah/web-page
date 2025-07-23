@@ -13,7 +13,7 @@ const AchivementEdu = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid grid-cols-2 gap-5 items-center'>
+        <div className='grid md:grid-cols-2 gap-5 items-center'>
             <div className='space-y-4'>
                 <h1 className='text-4xl font-bold'>Sorot Pencapaian Pengelolaan Sampah</h1>
                 <p className='text-justify'>Dengan dukungan masyarakat dan sistem pengelolaan yang baik, kami berhasil mengumpulkan ratusan ton sampah dari berbagai wilayah. Data ini menunjukkan peningkatan signifikan setiap bulannya, sekaligus membuktikan bahwa kebiasaan memilah sampah dapat memberikan dampak nyata bagi lingkungan.</p>

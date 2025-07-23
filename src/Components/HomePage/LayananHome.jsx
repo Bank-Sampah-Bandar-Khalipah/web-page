@@ -25,8 +25,8 @@ const layanan = [
 const LayananHome = () => {
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='space-y-10 px-16'>
-            <div className='w-1/2 space-y-6'>
+        <div className='space-y-10 md:px-16'>
+            <div className='md:w-1/2 space-y-6'>
                 <h1 className='text-4xl font-bold'>
                     Layanan terbaik untuk pengelolaan sampah
                 </h1>
@@ -34,9 +34,9 @@ const LayananHome = () => {
                     Kami menawarkan layanan pengumpulan sampah rumah tangga yang efisien dan ramah lingkungan. Bergabunglah dengan program daur ulang kami untuk mengurangi limbah dan menjaga kebersihan lingkungan
                 </p>
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid md:grid-cols-3 gap-5 md:gap-3'>
                 {layanan.map((item) => (
-                    <div key={item.id} className='text-2xl space-y-4'>
+                    <div key={item.id} className='text-2xl space-y-2 md:space-y-4'>
                         {item.icon}
                         <h2 className='font-semibold'>{item.name}</h2>
                         <p className='text-base'>{item.desc}</p>

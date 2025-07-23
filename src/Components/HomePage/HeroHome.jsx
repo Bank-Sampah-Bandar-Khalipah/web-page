@@ -17,8 +17,8 @@ const HeroHome = () => {
         {/* Overlay */}
 
         {/* Teks di atas gambar */}
-        <div className="relative z-10 flex h-full flex-col justify-center px-16">
-          <h1 className="text-white text-xl md:text-3xl font-bold drop-shadow-md w-1/2">
+        <div className="relative z-10 flex h-full flex-col justify-center text-center md:text-left px-4 md:px-16">
+          <h1 className="text-white text-xl md:text-3xl font-bold drop-shadow-md md:w-1/2">
             Selamat Datang di <br /><span className='text-4xl md:text-6xl'>Bank Sampah Bandar Khalipah</span>
           </h1>
           <p className="text-white mt-4 text-lg md:text-xl max-w-2xl drop-shadow-sm">

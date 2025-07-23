@@ -51,15 +51,15 @@ const LocHome = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='space-y-10'>
-            <h1 className='text-4xl font-bold'>
+        <div className='space-y-5 md:space-y-10'>
+            <h1 className='text-center md:text-left text-4xl font-bold'>
                 Hubungi Kami
             </h1>
-            <p>
+            <p className='text-center md:text-left'>
                 Kami siap membantu Anda, hubungi kami.
             </p>
-            <div className='flex items-center'>
-                <div className='w-1/2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 items-center space-y-4'>
+                <div className='md:w-1/2'>
                     {info.map((item) => (
                         <div key={item.id} className='flex flex-col gap-2 my-5 text-2xl'>
                             {item.icon}
@@ -72,7 +72,7 @@ const LocHome = () => {
                     ))}
                 </div>
                 {/* map */}
-                <div className='w-1/2'>
+                <div className='md:w-1/2'>
                     <iframe
                     title="Lokasi Bank Sampah"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15937.899254377827!2d98.7441764!3d3.6788991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031b9e8ea7c50e5%3A0x4b36fc9994eaf6e3!2sBank%20Sampah%20Induk%20Sicanang!5e0!3m2!1sid!2sid!4v1721538754982!5m2!1sid!2sid"

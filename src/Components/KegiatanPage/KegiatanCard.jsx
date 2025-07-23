@@ -61,8 +61,8 @@ const KegiatanCard = () => {
   return (
     <section className="container mx-auto section-spacing">
       {/* Filter Tabs */}
-      <div className="flex items-center px-7">
-        <ul className="flex items-center gap-6">
+      <div className="flex items-center">
+        <ul className="flex items-center gap-3 md:gap-6">
           {["all", "pelatihan", "webinar"].map((type) => (
             <li key={type}>
               <button
@@ -84,7 +84,7 @@ const KegiatanCard = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-15 px-10 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-15 md:px-10 gap-10">
         {displayedData.map((item) => (
           <div key={item.id} className="text-lg space-y-4 rounded-md shadow-md">
             <img

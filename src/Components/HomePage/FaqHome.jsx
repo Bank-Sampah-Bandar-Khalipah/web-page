@@ -41,7 +41,7 @@ const Faq = () => {
 
   return (
     <section className='container mx-auto section-spacing'>   
-        <div className="space-y-10">
+        <div className="space-y-5 md:space-y-10">
             <h1 className='font-bold text-4xl text-center'>
                 FAQ      
             </h1>
@@ -52,7 +52,7 @@ const Faq = () => {
 
             <div className="">
             {[question].map((group, i) => (
-                <div key={i} className="space-y-4 mx-30">
+                <div key={i} className="space-y-4 md:mx-20 lg:mx-30">
                 {group.map((q) => (
                     <div key={q.id} className="border-b overflow-hidden">
                     <button
