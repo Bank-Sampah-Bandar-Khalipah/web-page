@@ -25,7 +25,7 @@ const layanan = [
 const LayananHome = () => {
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='space-y-10 md:px-16'>
+        <div className='space-y-10 lg:px-8'>
             <div className='md:w-1/2 space-y-6'>
                 <h1 className='text-4xl font-bold'>
                     Layanan terbaik untuk pengelolaan sampah
