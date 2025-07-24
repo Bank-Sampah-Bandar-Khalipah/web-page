@@ -13,7 +13,7 @@ const GaleryAbout = () => {
     <section className='container mx-auto section-spacing'>
         <div className='space-y-10'>
             <h1 className='text-3xl font-bold'>Dokumentasi Kegiatan</h1>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid md:grid-cols-3 gap-4">
                 <div className='space-y-4'>
                     <img src={Img1} alt="" className='w-full h-80 object-cover'/>
                     <img src={Img2} alt="" className='w-full h-80 object-cover'/>
