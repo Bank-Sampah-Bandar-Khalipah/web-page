@@ -16,7 +16,7 @@ const Footer = () => {
     ]
     
   return (
-    <section className='p-10 rounded-t-2xl bg-[#DFE9F8]'>
+    <section className='p-10 rounded-t-2xl bg-[#0B1D51]'>
         <div className='bg-white container mx-auto section-spacing rounded-3xl shadow-2xl p-10 justify-between'>
             <div className='md:flex md:gap-5 space-y-10'>
                 <div className='space-y-2'>
