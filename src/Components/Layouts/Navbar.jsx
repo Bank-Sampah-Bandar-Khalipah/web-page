@@ -12,7 +12,7 @@ const Navbar = () => {
     }, [location.pathname])
 
     const navItems = [
-        {path: "/", label: "Home"},
+        {path: "/", label: "Beranda"},
         {path: "/about", label: "Tentang Kami"},
         {path: "/edu", label: "Edukasi"},
         {path: "/kegiatan", label: "Blog"},

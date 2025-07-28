@@ -5,7 +5,7 @@ import Image from '../../assets/images/manfaatpage/bandarkhalipah3.webp'
 const ProfileAbout = () => {
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid md:grid-cols-2 items-center gap-10'>
+        <div className='grid lg:grid-cols-2 items-center gap-10'>
             <div className='space-y-4'>
                 <h4 className='font-bold'>Menjaga Lingkungan, Membangun Masa Depan</h4>
                 <h1 className='text-3xl font-bold'>About Bank Sampah Bandar Khalipah</h1>
