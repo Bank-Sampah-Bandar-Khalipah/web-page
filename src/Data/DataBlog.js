@@ -6,76 +6,72 @@ import kumpulankegiatan5 from '../assets/images/kegiatan1.webp';
 import kumpulankegiatan6 from '../assets/images/kegiatan2.webp';
 import kumpulankegiatan7 from '../assets/images/kegiatan3.webp';
 import kumpulankegiatan8 from '../assets/images/ketuaRT.webp';
+import kumpulankegiatan9 from '../assets/images/manfaatpage/bandarkhalipah6.webp';
+import kumpulankegiatan10 from '../assets/images/bu_sony_leader.webp';
+import kumpulankegiatan11 from '../assets/images/arson_tokoh_masyarakat.jpg';
+import kumpulankegiatan12 from '../assets/images/tari-sambutan.webp';
 
 const dataBlog = [
   {
     id: 1,
-    name: "PROGRAM AKSI EDUKASI MASYARAKAT",
-    gambar: kumpulankegiatan,
-    desc: ["Program Aksi Edukasi Masyarakat ini bertujuan untuk meningkatkan kesadaran masyarakat terhadap pentingnya pengelolaan sampah rumah tangga. Dalam kegiatan ini, tim relawan melakukan kunjungan langsung dari rumah ke rumah, memberikan penjelasan langsung mengenai cara memilah sampah organik dan anorganik, serta memperkenalkan sistem pengumpulan sampah yang terjadwal dan sistematis. Masyarakat diajak untuk aktif berpartisipasi dalam menjaga kebersihan lingkungan sekitar dengan membiasakan diri membuang sampah pada tempatnya dan mengurangi penggunaan plastik sekali pakai.", 
-    "Kegiatan ini juga dilengkapi dengan pembagian brosur edukatif dan sesi tanya jawab langsung dengan warga untuk mendengarkan kendala yang mereka hadapi dalam pengelolaan sampah sehari-hari. Harapannya, pendekatan personal ini mampu mendorong perubahan perilaku yang lebih berkelanjutan dalam jangka panjang serta memperkuat rasa tanggung jawab kolektif terhadap lingkungan."],
-    kategori: "edukasi",
+    name: "USU dan Warga Desa Bandar Khalipah Kolaborasi Wujudkan Program Bank Sampah",
+    kategori: "sosialisasi",
+    konten: [
+      { type: "text", content: "Universitas Sumatera Utara (USU) bersama masyarakat Desa Bandar Khalipah menggelar kegiatan sosialisasi dalam rangka pengabdian masyarakat bertajuk “Mewujudkan Kampus Iklim: Bank Sampah sebagai Solusi Ekonomi dan Lingkungan." },
+      { type: "image", content: kumpulankegiatan2 },
+      { type: "text", content: "Kegiatan yang berlangsung hangat ini merupakan langkah awal kerja sama strategis antara mahasiswa dan dosen USU dengan warga desa untuk membangun kesadaran lingkungan sekaligus mendorong pertumbuhan ekonomi lokal melalui program Bank Sampah." },
+      { type: "text", content: "Dalam acara tersebut, tim pengabdian masyarakat USU memberikan pemahaman tentang konsep bank sampah, manfaat ekonominya, serta mekanisme pelaksanaannya. Sosialisasi juga diisi dengan sesi diskusi interaktif yang melibatkan tokoh masyarakat dan perwakilan warga setempat, membahas potensi dan tantangan pelaksanaan program ini ke depan." },
+      { type: "image", content: kumpulankegiatan4 },
+      { type: "text", content: "Program bank sampah ini dirancang untuk mendorong masyarakat memilah sampah dari rumah, menabung sampah yang bernilai ekonomi, dan secara tidak langsung membantu mengurangi pencemaran lingkungan. Sampah yang dikumpulkan akan dicatat sebagai tabungan yang bisa ditukar dalam bentuk uang, sembako, atau keperluan lainnya." },
+      { type: "text", content: "Kepala Desa Bandar Khalipah menyambut baik inisiatif ini dan berharap bank sampah dapat menjadi salah satu solusi berkelanjutan yang memperkuat ekonomi warga serta membentuk budaya peduli lingkungan di masyarakat." },
+      { type: "text", content: "Melalui kegiatan ini, USU tidak hanya menunjukkan komitmennya dalam pelaksanaan tridharma perguruan tinggi, tetapi juga turut berperan aktif dalam mendorong perubahan positif di tingkat akar rumput. Semangat kolaborasi ini diharapkan menjadi awal dari berbagai inovasi lainnya yang bisa memberikan manfaat nyata bagi masyarakat." },
+    ],
   },
   {
     id: 2,
-    name: "SOSIALISASI PENGABDIAN MASYARAKAT DESA BINAAN UNIVERSITAS SUMATERA UTARA",
-    gambar: kumpulankegiatan2,
-    desc: ["Kegiatan sosialisasi ini merupakan bagian dari program pengabdian masyarakat Universitas Sumatera Utara tahun 2025. Dalam kegiatan ini, mahasiswa dan dosen bersama-sama terjun langsung ke tengah masyarakat untuk memperkenalkan program desa binaan yang akan berjalan selama beberapa bulan ke depan. Tujuannya adalah membangun kolaborasi antara akademisi dan warga dalam menangani isu lingkungan, terutama dalam pengelolaan sampah dan pemanfaatan limbah menjadi barang berguna.", 
-    "Masyarakat diajak berdiskusi secara terbuka mengenai kondisi lingkungan mereka, sambil mendapatkan informasi mengenai peran serta mereka dalam program tersebut. Dengan adanya kegiatan ini, diharapkan tumbuh kesadaran dan semangat gotong royong dalam mengimplementasikan berbagai solusi yang telah dirancang bersama tim universitas."],
+    name: "Semangat Gotong Royong: Warga Desa Bandar Khalipah Bergerak Demi Lingkungan Bersih",
     kategori: "sosialisasi",
+    konten: [
+      { type: "text", content: "Warga Desa Bandar Khalipah kembali menunjukkan semangat kebersamaan dan kepedulian terhadap lingkungan melalui kegiatan gotong royong membersihkan lingkungan sekitar. Dengan penuh semangat, ibu-ibu, bapak-bapak, bahkan anak-anak turut serta turun ke lapangan untuk membersihkan saluran air dan area sekitar permukiman." },
+      { type: "text", content: "Kegiatan ini merupakan bentuk nyata bahwa perubahan bisa dimulai dari masyarakat itu sendiri. Dengan inisiatif dan kesadaran kolektif, warga berkumpul untuk menciptakan lingkungan yang bersih, sehat, dan nyaman untuk ditinggali." },
+      { type: "image", content: kumpulankegiatan },
+      { type: "text", content: "Gotong royong ini juga menjadi bagian dari rangkaian program pemberdayaan masyarakat yang digaungkan bersama tim pengabdian dari Universitas Sumatera Utara (USU), sebagai upaya menyambut kehadiran Bank Sampah di desa tersebut. Program ini tidak hanya bertujuan mengelola sampah secara bijak, tetapi juga menjadi gerakan akar rumput dalam membangun kesadaran ekologis sejak dari rumah." },
+      { type: "image", content: kumpulankegiatan9 },
+      { type: "text", content: "Kehangatan dan kekompakan warga terlihat jelas dalam setiap senyuman dan kepalan tangan yang mereka angkat dengan bangga—sebuah simbol bahwa warga siap menjaga desanya sendiri. Tidak hanya sebagai penerima program, masyarakat Desa Bandar Khalipah tampil sebagai pelaku perubahan." },
+      { type: "text", content: "Kegiatan ini menjadi bukti bahwa ketika masyarakat bersatu dan bergerak bersama, tidak ada yang tidak mungkin untuk diwujudkan." },
+    ],
   },
   {
     id: 3,
-    name: "EDUKASI LINGKUNGAN UNTUK ANAK DAN REMAJA",
-    gambar: kumpulankegiatan3,
-    desc: [
-        "Anak dan remaja merupakan generasi penerus yang sangat penting dalam mewujudkan perubahan gaya hidup ramah lingkungan. Melalui kegiatan edukasi ini, mereka dikenalkan dengan berbagai cara memilah dan mendaur ulang sampah dengan metode yang menyenangkan dan interaktif. Permainan edukatif, lomba gambar, dan sesi diskusi ringan menjadi metode pendekatan yang digunakan agar mereka lebih mudah memahami pentingnya menjaga kebersihan.",
-        "Selain itu, para peserta juga diajak untuk melihat langsung proses pengelolaan sampah di lingkungan sekitar. Kegiatan ini bertujuan menanamkan nilai-nilai kepedulian lingkungan sejak dini, membentuk kebiasaan baik, serta membangun rasa tanggung jawab terhadap alam dan lingkungan tempat tinggal mereka."
-    ],
+    name: "Menanamkan Kepedulian Lingkungan Sejak Dini: Edukasi Circular Economy untuk Anak-anak",
     kategori: "edukasi",
+    konten: [
+      { type: "image", content: kumpulankegiatan3 },
+      { type: "text", content: "Desa Bandar Khalipah kembali menjadi saksi semangat generasi muda dalam menjaga kelestarian lingkungan. Dalam kegiatan edukatif yang berlangsung ceria dan penuh semangat, sekelompok mahasiswa dari program pengabdian masyarakat mengajak anak-anak sekitar untuk belajar tentang pentingnya menjaga lingkungan dan mengenal konsep circular economy sejak usia dini." },
+      { type: "text", content: "Kegiatan ini dikemas secara menyenangkan dengan pendekatan langsung yang melibatkan anak-anak dalam aktivitas edukatif dan interaktif. Melalui media sederhana seperti permainan, diskusi ringan, hingga pemberian alat peraga edukatif, anak-anak diajak memahami pentingnya memilah sampah, mengurangi penggunaan plastik, dan bagaimana barang-barang yang sudah tidak digunakan bisa dimanfaatkan kembali." },
+      { type: "image", content: kumpulankegiatan7 },
+      { type: "text", content: "Tak hanya belajar, momen kebersamaan juga diisi dengan makan bersama di alam terbuka, mempererat kebersamaan dan menunjukkan betapa indahnya hidup berdampingan dengan alam. Kegiatan ini sejalan dengan prinsip circular economy, di mana limbah bukan akhir dari siklus, melainkan awal dari manfaat baru." },
+      { type: "text", content: "Dengan semangat kolaborasi antara masyarakat, anak-anak, dan mahasiswa, kegiatan ini diharapkan menjadi langkah awal untuk membentuk komunitas yang sadar dan peduli terhadap lingkungan, sekaligus menciptakan masa depan yang lebih hijau dan berkelanjutan." },
+    ],
   },
   {
     id: 4,
-    name: "DISKUSI DAN RAPAT KOORDINASI PENGELOLAAN SAMPAH BERBASIS KOMUNITAS",
-    gambar: kumpulankegiatan4,
-    desc: ["Forum diskusi ini menghadirkan berbagai elemen masyarakat seperti tokoh masyarakat, pemuda, ibu rumah tangga, dan tim pengelola bank sampah. Bersama-sama mereka membahas strategi pengelolaan sampah berbasis komunitas yang lebih efektif. Topik utama mencakup penjadwalan pengangkutan sampah, pembentukan kelompok kerja lingkungan, serta pemanfaatan sampah organik menjadi kompos. Kegiatan ini juga menjadi wadah penyampaian aspirasi warga mengenai tantangan yang mereka hadapi sehari-hari. Hasil dari diskusi ini menjadi dasar dalam menyusun rencana aksi lingkungan yang disesuaikan dengan kondisi lokal. Kolaborasi ini menciptakan rasa memiliki yang tinggi terhadap program kebersihan lingkungan.",
-        "Kegiatan ini juga menjadi wadah penyampaian aspirasi warga mengenai tantangan yang mereka hadapi sehari-hari. Hasil dari diskusi ini menjadi dasar dalam menyusun rencana aksi lingkungan yang disesuaikan dengan kondisi lokal. Kolaborasi ini menciptakan rasa memiliki yang tinggi terhadap program kebersihan lingkungan."
+    name: "Sosialisasi Bank Sampah Tahap Kedua: Menuju Kesadaran Lingkungan Kolektif dari Masyarakat ke Desa",
+    kategori: "edukasi",
+    konten: [
+        { type: "text", content: "Program Bank Sampah yang diinisiasi oleh dosen Universitas Sumatera Utara (USU), Bu Sony, kembali berlanjut dalam bentuk kegiatan sosialisasi tahap kedua yang digelar di Dusun 4, Desa Bandar Khalipah. Sosialisasi ini dihadiri oleh perwakilan dari 5 keluarga serta tokoh-tokoh masyarakat dari RT dan RW setempat, sebagai upaya memperluas pemahaman dan komitmen terhadap pengelolaan sampah berbasis partisipasi warga." },
+        { type: "image", content: kumpulankegiatan10 },
+      { type: "text", content: "Dalam kegiatan ini, Bu Sony yang juga merupakan focal point sekaligus leader dari program Bank Sampah, memaparkan secara komprehensif konsep dasar, manfaat, serta mekanisme pelaksanaan Bank Sampah kepada warga. Ia menekankan pentingnya kesadaran kolektif dari skala keluarga hingga desa untuk mengubah cara pandang terhadap sampah, dari limbah tak berguna menjadi aset bernilai ekonomi." },
+      { type: "text", content: "“Bank Sampah bukan hanya soal kebersihan lingkungan, tetapi juga tentang membangun sistem ekonomi alternatif yang inklusif dan ramah lingkungan,” ujar Bu Sony saat menyampaikan materinya di hadapan peserta sosialisasi." },
+      { type: "image", content: kumpulankegiatan8 },
+      { type: "text", content: "Sosialisasi yang berlangsung dalam suasana hangat dan partisipatif ini juga diwarnai dengan sambutan tokoh masyarakat, termasuk Arson, Ketua RT Dusun 4, yang menyatakan dukungannya terhadap keberlanjutan program. Ia menyampaikan harapan agar Bank Sampah dapat menjadi budaya baru di masyarakat, bukan sekadar program sementara." },
+      { type: "image", content: kumpulankegiatan11 },
+      { type: "image", content: kumpulankegiatan12 },
+      { type: "text", content: "Kegiatan ini turut dimeriahkan oleh penampilan anak-anak setempat yang membawakan tarian sambutan dengan hiaSosialisasi tahap kedua ini menjadi bagian dari strategi pengembangan program secara bertahap, dimulai dari klaster keluarga kecil menuju cakupan yang lebih luas, yakni tingkat desa secara keseluruhan. Semangat gotong royong dan komitmen warga menjadi modal sosial utama yang diharapkan mampu memperkuat implementasi Bank Sampah ke depan." },
+      { type: "text", content: "Sosialisasi yang berlangsung dalam suasana hangat dan partisipatif ini juga diwarnai dengan sambutan tokoh masyarakat, termasuk Arson, Ketua RT Dusun 4, yang menyatakan dukungannya terhadap keberlanjutan program. Ia menyampaikan harapan agar Bank Sampah dapat menjadi budaya baru di masyarakat, bukan sekadar program sementara." },
+      { type: "text", content: "Dengan keterlibatan aktif dari masyarakat dan dukungan akademisi, langkah kecil ini diharapkan menjadi fondasi besar dalam menciptakan Desa Bandar Khalipah sebagai desa yang sadar lingkungan dan mandiri secara ekonomi melalui pengelolaan sampah terpadu." },
     ],
-    kategori: "edukasi",
   },
-  {
-    id: 5,
-    name: "SOSIALISASI DAN KATA SAMBUTAN OLEH PAK ASRON",
-    gambar: kumpulankegiatan5,
-    desc: ["Dalam rangka mempererat hubungan antara warga dan pengurus bank sampah, kegiatan sosialisasi ini dibuka dengan kata sambutan dari Pak Asron selaku tokoh masyarakat. Dalam sambutannya, beliau menekankan pentingnya partisipasi aktif seluruh warga dalam menjaga kebersihan dan menciptakan lingkungan yang sehat. Kegiatan ini berlangsung di ruang terbuka yang nyaman dan memungkinkan diskusi dua arah yang hangat.",
-        "Warga yang hadir juga mendapatkan penjelasan mengenai mekanisme penyerahan sampah, jadwal pengangkutan, dan manfaat langsung dari program ini bagi kesejahteraan warga. Pak Asron menyampaikan bahwa kepedulian terhadap lingkungan adalah cerminan kepedulian terhadap masa depan anak cucu kita."],
-    kategori: "sosialisasi",
-  },
-  {
-    id: 6,
-    name: "RAPAT KOORDINASI INTERNAL BERSAMA TOKOH DAN WARGA",
-    gambar: kumpulankegiatan6,
-    desc: ["Rapat internal ini merupakan upaya memperkuat sinergi antara pengelola bank sampah dan tokoh masyarakat. Diskusi dilakukan secara santai namun produktif, membahas evaluasi kegiatan sebelumnya dan rencana kegiatan ke depan. Beberapa tokoh masyarakat memberikan masukan mengenai penambahan titik kumpul sampah dan perlunya edukasi lanjutan bagi warga.",
-    "Hasil rapat ini menjadi pijakan penting dalam memperbaiki sistem yang sudah berjalan serta menyusun strategi baru agar program pengelolaan sampah semakin efektif. Rapat ini juga menunjukkan betapa pentingnya komunikasi dan keterlibatan semua pihak dalam setiap proses pengambilan keputusan."],
-    kategori: "edukasi",
-  },
-  {
-    id: 7,
-    name: "EDUKASI ANAK TENTANG PENGELOLAAN SAMPAH DAN TEKNOLOGI SEJAK DINI",
-    gambar: kumpulankegiatan7,
-    desc: ["Anak-anak diajak untuk mengenal pentingnya pengelolaan sampah melalui pendekatan yang menyenangkan dan interaktif. Mereka belajar tentang jenis-jenis sampah, proses daur ulang, hingga bagaimana teknologi dapat membantu menjaga kebersihan lingkungan. Kegiatan ini dilakukan dalam bentuk kelas kecil yang dipandu oleh fasilitator yang ramah anak.", 
-    "Dengan kegiatan seperti ini, diharapkan anak-anak akan tumbuh menjadi pribadi yang bertanggung jawab terhadap lingkungan dan terbuka terhadap teknologi hijau. Mereka juga didorong untuk menjadi agen perubahan kecil dalam keluarga masing-masing."
-    ],
-    kategori: "edukasi",
-  },
-  {
-    id: 8,
-    name: "SOSIALISASI DAN KATA SAMBUTAN OLEH KETUA RT",
-    gambar: kumpulankegiatan8,
-    desc: ["Kegiatan ini dimulai dengan sambutan dari Ketua RT yang memberikan semangat dan motivasi kepada warga untuk aktif dalam program kebersihan lingkungan. Beliau menegaskan bahwa kolaborasi antara warga, tokoh masyarakat, dan pengelola bank sampah merupakan kunci suksesnya pengelolaan lingkungan yang berkelanjutan.",
-    "Kegiatan dilanjutkan dengan pemaparan singkat mengenai program-program yang akan dijalankan dalam beberapa bulan ke depan, termasuk pelatihan pemilahan sampah dan kegiatan kerja bakti rutin. Sambutan yang disampaikan dengan penuh semangat ini mendapat apresiasi tinggi dari warga yang hadir."],
-    kategori: "sosialisasi",
-  },
-]
+];
 
-export default dataBlog
+export default dataBlog;

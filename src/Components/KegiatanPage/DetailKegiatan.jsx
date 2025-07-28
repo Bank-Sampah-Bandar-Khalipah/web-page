@@ -22,16 +22,26 @@ const DetailKegiatan = () => {
       {/* Konten Utama */}
       <div className="lg:col-span-3">
         <h1 className="text-4xl font-bold mb-2">{kegiatan.name}</h1>
-        <img
-          src={kegiatan.gambar}
-          alt={kegiatan.name}
-          className="w-full h-96 object-cover mb-6"
-        />
-        <div className="text-lg leading-relaxed text-justify">
-          {kegiatan.desc.map((paragraf, index) => (
-            <p key={index} className="mb-4">{paragraf}</p>
-          ))}
-        </div>
+
+        {kegiatan.konten.map((item, index) => {
+            if (item.type === "text") {
+            return (
+                <p key={index} className="text-lg leading-relaxed text-justify mb-4">
+                {item.content}
+                </p>
+            );
+            } else if (item.type === "image") {
+            return (
+                <img
+                key={index}
+                src={item.content}
+                alt={`Gambar ${index + 1}`}
+                className="w-full h-96 object-cover mb-6"
+                />
+            );
+            }
+            return null;
+        })}
       </div>
 
       {/* Sidebar - Berita Terkini */}
