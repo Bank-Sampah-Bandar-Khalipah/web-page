@@ -54,24 +54,35 @@ const KegiatanCard = () => {
 
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
-        {displayedData.map((item) => (
-          <div
-            key={item.id}
-            onClick={() => navigate(`/detail-kegiatan/${item.id}`)}
-            className="text-lg space-y-4 rounded-md shadow-md cursor-pointer hover:shadow-lg transition"
-          >
-            <img
-              src={item.gambar}
-              alt={item.name}
-              className="rounded-md h-60 w-full object-cover"
-            />
-            <p className="font-semibold px-4">{item.name}</p>
-            <p className="text-base/loose opacity-50 px-4 py-2">
-              {getFirstSentence(item.desc)}
-            </p>
-          </div>
-        ))}
+        {displayedData.map((item) => {
+          // Ambil konten text pertama
+          const firstText = item.konten.find((kontenItem) => kontenItem.type === "text")?.content || "";
+          // Ambil kalimat pertama
+          const firstSentence = firstText.split(".")[0] + ".";
+
+          return (
+            <div
+              key={item.id}
+              onClick={() => navigate(`/detail-kegiatan/${item.id}`)}
+              className="text-lg space-y-4 rounded-md shadow-md cursor-pointer hover:shadow-lg transition"
+            >
+              <img
+                src={
+                  item.konten.find((kontenItem) => kontenItem.type === "image")?.content ||
+                  "/default.jpg"
+                }
+                alt={item.name}
+                className="rounded-md h-60 w-full object-cover"
+              />
+              <p className="font-semibold px-4">{item.name}</p>
+              <p className="text-base/loose opacity-50 px-4 py-2">
+                {firstSentence}
+              </p>
+            </div>
+          );
+        })}
       </div>
+
 
       {/* Pagination */}
       <div className="flex justify-center mt-12 space-x-2">
