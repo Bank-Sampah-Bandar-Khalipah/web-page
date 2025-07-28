@@ -7,6 +7,7 @@ import About from './Page/About.jsx'
 import './App.css'
 import Kegiatan from './Page/Kegiatan.jsx'
 import Education from './Page/Education.jsx'
+import DetailKegiatan from './Components/KegiatanPage/DetailKegiatan.jsx'; 
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/edu" element={<Education />} />
         <Route path="/kegiatan" element={<Kegiatan />} />
+        <Route path="/detail-kegiatan/:id" element={<DetailKegiatan />} />
       </Routes>
   )
 }
