@@ -1,6 +1,3 @@
-import React from 'react'
-import ReactPlayer from "react-player";
-
 const HeroEdu = () => {
   return (
     <section className='container mx-auto section-spacing'>
