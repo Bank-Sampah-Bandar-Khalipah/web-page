@@ -13,7 +13,7 @@ const AchivementEdu = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid grid-cols-2 gap-5 items-center'>
+        <div className='grid md:grid-cols-2 gap-5 items-center'>
             <div className='space-y-4'>
                 <h1 className='text-4xl font-bold'>Sorot Pencapaian Pengelolaan Sampah</h1>
                 <p className='text-justify'>Dengan dukungan masyarakat dan sistem pengelolaan yang baik, kami berhasil mengumpulkan ratusan ton sampah dari berbagai wilayah. Data ini menunjukkan peningkatan signifikan setiap bulannya, sekaligus membuktikan bahwa kebiasaan memilah sampah dapat memberikan dampak nyata bagi lingkungan.</p>
@@ -33,8 +33,12 @@ const AchivementEdu = () => {
                 </div>
             </div>
             <div>
-                <img src={Image} alt="" />
+                <img src={Image} alt="foto" />
             </div>
+        </div>
+        <div className='text-center mt-20 space-y-4'>
+            <p>Bersama Kita Pilah, Bersama Kita Jaga Bandar Khalipah.</p>
+            <h2 className='text-lg md:text-xl font-bold'>Bank Sampah Bandar Khalipah bukan hanya tempat menyetorkan sampah,<br className='hidden lg:block'/> tetapi juga ruang tumbuhnya kesadaran warga akan pentingnya kebersihan dan cinta lingkungan. <br className='hidden lg:block'/>Di sini, warga diajak memilah sampah dari rumah dan melihat nilai dari barang bekas, membangun <br className='hidden lg:block'/>budaya yang lebih peduli pada alam.</h2>
         </div>
     </section>
   )
