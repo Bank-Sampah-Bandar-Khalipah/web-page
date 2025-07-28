@@ -6,12 +6,15 @@ import Home from './Page/Home.jsx'
 import About from './Page/About.jsx'
 import './App.css'
 import Kegiatan from './Page/Kegiatan.jsx'
+import Education from './Page/Education.jsx'
 
 function App() {
   return (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/edu" element={<Education />} />
+        <Route path="/kegiatan" element={<Kegiatan />} />
       </Routes>
   )
 }

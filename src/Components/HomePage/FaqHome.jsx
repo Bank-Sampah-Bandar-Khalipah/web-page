@@ -50,7 +50,7 @@ const Faq = () => {
                 Find answers to frequently asked question about Circularity Center USU
             </p>
 
-            <div className="grid grid-cols-1 gap-4">
+            <div className="">
             {[question].map((group, i) => (
                 <div key={i} className="space-y-4 mx-30">
                 {group.map((q) => (
