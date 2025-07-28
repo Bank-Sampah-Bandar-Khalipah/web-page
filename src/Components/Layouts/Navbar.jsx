@@ -12,7 +12,7 @@ const Navbar = () => {
     }, [location.pathname])
 
     const navItems = [
-        {path: "/", label: "Home"},
+        {path: "/", label: "Beranda"},
         {path: "/about", label: "Tentang Kami"},
         {path: "/edu", label: "Edukasi"},
         {path: "/kegiatan", label: "Blog"},
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <Link
                     key={index}
                     to={link.path}
-                    className={`after:transition-all ${activeLink === link.path ? "active" : ""}`}
+                    className={`after:transition-all ${activeLink === link.path ? "active underline underline-offset-4" : ""}`}
                     >
                     {link.label}
                     </Link> 
