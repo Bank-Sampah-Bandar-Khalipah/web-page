@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi';
-import logo from '/public/logo1.svg'
+import logo from '/logo1.svg'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)

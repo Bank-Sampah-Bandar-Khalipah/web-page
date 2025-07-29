@@ -7,7 +7,7 @@ const ProfileAbout = () => {
     <section className='container mx-auto section-spacing'>
         <div className='grid lg:grid-cols-2 items-center gap-10'>
             <div className='order-2 md:order-1 space-y-4'>
-                <h4 className='font-bold'>Menjaga Lingkungan, Membangun Masa Depan</h4>
+                <h4 className='font-bold'>Dari 5 keluarga menjadi satu dusun menuju satu desa</h4>
                 <h1 className='text-3xl font-bold'>About Bank Sampah Bandar Khalipah</h1>
                 <p className='text-justify'>
                     Bank Sampah Bandar Khalipah adalah sebuah inisiatif masyarakat di Kecamatan Percut Sei Tuan yang bertujuan untuk mengurangi jumlah sampah yang mencemari lingkungan dengan cara yang produktif dan berkelanjutan. Melalui sistem tabungan sampah, warga dapat menabung sampah anorganik dan mendapatkan nilai ekonomis dari sampah yang mereka setor.<br />
