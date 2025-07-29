@@ -12,10 +12,10 @@ const LocHome = () => {
         title: "Email",
         desc: (
         <a
-            href="mailto:kM1b6@example.com"
+            href="mailto:banksampahbandarkhalipah@gmail.com"
             className="hover:underline"
         >
-            kM1b6@example.com
+            banksampahbandarkhalipah@gmail.com
         </a>
         ),
     },
@@ -38,12 +38,12 @@ const LocHome = () => {
         title: "Alamat",
         desc: (
         <a
-            href="https://maps.app.goo.gl/fj3w727bpFS6uNsn7"
+            href="https://maps.app.goo.gl/UzSYFJrUUFhRuGNB6"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
         >
-            Bandar Khalipah, Kec. Percut Sei Tuan 
+            Jl. Besar Bandar Khalipah, Desa Bandar Khalipah, Kecamatan Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara, Indonesia. 
         </a>
         ),
     },
@@ -75,7 +75,8 @@ const LocHome = () => {
                 <div className=''>
                     <iframe
                     title="Lokasi Bank Sampah"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15937.899254377827!2d98.7441764!3d3.6788991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031b9e8ea7c50e5%3A0x4b36fc9994eaf6e3!2sBank%20Sampah%20Induk%20Sicanang!5e0!3m2!1sid!2sid!4v1721538754982!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15937.989361472815!2d98.7432867!3d3.6145786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031cfe73614cf8f%3A0x0!2zM8KwMzYnNTIuNSJOIDk4wrA0NCczNS44IkU!5e0!3m2!1sid!2sid!4v1721955900000!5m2!1sid!2sid
+"
                     height="350"
                     className="w-full"
                     allowFullScreen=""

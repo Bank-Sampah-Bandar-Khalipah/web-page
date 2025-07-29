@@ -12,7 +12,7 @@ const ManfaatHome = () => {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-items-center'>
                 {dataManfaat.map((item) =>(
                     <div key={item.id} className='flex flex-col gap-5 items-center my-10 text-center w-80'>
-                        <img src={item.image} alt="item" className='rounded-xl' />
+                        <img src={item.image} alt="item" className='w-full h-64 object-cover' />
                         <div className='space-y-2 md:space-y-10'>
                             <h2 className='text-2xl font-bold'>{item.title}</h2>
                             <p>{item.desc}</p>

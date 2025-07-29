@@ -1,6 +1,6 @@
 import img1 from "../assets/images/manfaatpage/bandarkhalipah.webp"
-import img2 from "../assets/images/manfaatpage/bandarkhalipah2.webp"
-import img3 from "../assets/images/manfaatpage/bandarkhalipah3.webp"
+import img2 from "../assets/images/proses-sampah1.webp"
+import img3 from "../assets/images/partisipasi1.webp"
 
 const dataManfaat = [
   {

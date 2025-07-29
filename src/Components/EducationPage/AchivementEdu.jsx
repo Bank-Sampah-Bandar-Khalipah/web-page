@@ -1,19 +1,19 @@
 import React from 'react'
 import CountUp from 'react-countup'
-import Image from '../../assets/images/manfaatpage/bandarkhalipah3.webp'
+import Image from '../../assets/images/proses-sampah.webp'
 
 const AchivementEdu = () => {
 
   const sampah = [
     {id:1, total:80, desc:"Partisipasi Warga", suffix:"%"},
-    {id:2, total:1000, desc:"Setoran Sampah per Bulan", suffix:"+"},
-    {id:3, total:10000, desc:"Sampah Plastik", suffix:"+"},
-    {id:4, total:100, desc:"Sampah Jenis Lainnya", suffix:"+"},
+    {id:2, total:100, desc:"Setoran Sampah per Bulan", suffix:"kg"},
+    {id:3, total:100, desc:"Sampah Plastik", suffix:"+"},
+    {id:4, total:200, desc:"Sampah Jenis Lainnya", suffix:"+"},
   ]
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid md:grid-cols-2 gap-5 items-center'>
+        <div className='grid md:grid-cols-2 gap-5 items-center h-[420px]'>
             <div className='space-y-4'>
                 <h1 className='text-4xl font-bold'>Sorot Pencapaian Pengelolaan Sampah</h1>
                 <p className='text-justify'>Dengan dukungan masyarakat dan sistem pengelolaan yang baik, kami berhasil mengumpulkan ratusan ton sampah dari berbagai wilayah. Data ini menunjukkan peningkatan signifikan setiap bulannya, sekaligus membuktikan bahwa kebiasaan memilah sampah dapat memberikan dampak nyata bagi lingkungan.</p>
@@ -33,7 +33,7 @@ const AchivementEdu = () => {
                 </div>
             </div>
             <div>
-                <img src={Image} alt="foto" />
+                <img src={Image} alt="foto" className='h-[400px] w-full object-cover'/>
             </div>
         </div>
         <div className='text-center mt-20 space-y-4'>

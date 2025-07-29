@@ -5,13 +5,13 @@ const TargetHome = () => {
   const target = [
     {
       id: 1,
-      total: 200,
+      total: 20,
       desc: 'Kepala Keluarga Aktif',
       suffix: '+',
     },
     {
       id: 2,
-      total: 500,
+      total: 10,
       desc: 'Nasabah Terdaftar',
       suffix: '+',
     },
@@ -23,15 +23,16 @@ const TargetHome = () => {
     },
     {
       id: 4,
-      total: 1000,
-      desc: 'Setoran Per Bulan',
-      suffix: '+',
+      total: 100,
+      desc: 'Setoran Sampah Per Bulan',
+      suffix: 'kg',
     },
   ]
 
   const sampah = [
-    {id:1, total:1000, desc:"Sampah Plastik", suffix:"+"},
-    {id:2, total:100, desc:"Sampah Jenis Lainnya", suffix:"+"},
+    {id:1, total:200, desc:"Sampah Plastik", suffix:"+"},
+    {id:2, total:100, desc:"Sampah Kertas", suffix:"+"},
+    {id:3, total:100, desc:"Sampah Kardus", suffix:"+"},
   ]
 
   return (
@@ -57,7 +58,7 @@ const TargetHome = () => {
         </div>
 
         <h1 className='mt-10 text-center text-3xl font-semibold'>Total Sampah Terkumpul</h1>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-3'>
             {sampah.map((item) => (
               <div
                 key={item.id}

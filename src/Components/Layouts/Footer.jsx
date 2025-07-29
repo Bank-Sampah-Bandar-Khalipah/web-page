@@ -1,38 +1,48 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
     const footItem = [
-        {path: "/", label: "Tautan 1 informasi atau kontak lainnya"},
-        {path: "/", label: "Tautan 2"},
-        {path: "/", label: "Tautan 3"},
-        {path: "/", label: "Tautan 4"},
+        { path: "https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr#", label: "Facebook", icon: <FaFacebook /> },
+        { path: "/", label: "Instagram", icon: <FaInstagram /> },
+        { path: "/", label: "Whatsapp", icon: <FaWhatsapp /> },
+        { path: "/", label: "Youtube", icon: <FaYoutube /> },
     ]
 
     const moreInfo = [
-        {label: "Jl. Dr. T. Mansur No. 9, Kampus Padang Bulan, Medan, 20155, Sumatera Utara"},
-        {label: "banksamaphbandarkhalipah@gmail.com"},
+        {label: "Jl. Besar Bandar Khalipah, Desa Bandar Khalipah, Kecamatan Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara, Indonesia."},
+        {label: "banksampahbandarkhalipah@gmail.com"},
         {label: "+628098980898"},
     ]
     
   return (
     <section className='p-10 rounded-t-2xl bg-[#0B1D51]'>
         <div className='bg-white container mx-auto section-spacing rounded-3xl shadow-2xl p-10 justify-between'>
-            <div className='md:flex md:gap-5 space-y-10'>
-                <div className='space-y-2'>
-                    <h1 className='text-2xl font-bold'>LOGO</h1>
-                    <p className=''>Ayo gabung bersama kami, kumpulkan sampah dan jaga lingkungan.</p>
+            <div className='grid md:grid-cols-2 md:gap-5'>
+                <div className='flex'>
+                    <div className='space-y-4'>
+                        <h1 className='text-2xl font-bold'>LOGO</h1>
+                        <p className=''>Ayo gabung bersama kami, kumpulkan sampah dan jaga lingkungan.</p>
+                    </div>
+                    <div className='space-y-4'>
+                        <h2>Sosial Media</h2>
+                        <ul className='space-y-4'>
+                            {footItem.map((item) => (
+                                <Link 
+                                key={item.id} 
+                                to={item.path} 
+                                className='flex items-center space-x-2'>
+                                    <span className='text-2xl'>{item.icon}</span>
+                                    <span>{item.label}</span>
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                <div className='space-y-2'>
-                    <h2>Kolom satu</h2>
-                    <ul className='space-y-2'>
-                        {footItem.map((item) => (
-                            <li>{item.label}</li>
-                        ))}
-                    </ul>
-                </div>
-                <div className='space-y-2'>
-                    <h2>Kolom dua</h2>
+                <div className='space-y-4'>
+                    <h2>Kontak</h2>
                     <ul className='space-y-2'>
                         {moreInfo.map((item) => (
                             <li>{item.label}</li>

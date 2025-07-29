@@ -3,14 +3,14 @@
 
   const HeroAbout = () => {
     return (
-      <section className='container mx-auto'>
+      <section className='container mx-auto mb-12'>
           <img
             src={HeroImage}
             alt="sampah"
-            className="absolute inset-0 h-[60vh] w-full object-cover"
+            className="absolute inset-0 h-[65vh] w-full object-cover"
           />
         
-        <div className="absolute inset-0 h-[60vh] bg-black opacity-50"></div>
+        <div className="absolute inset-0 h-[65vh] bg-black opacity-50"></div>
         
         <div className="relative h-[60vh] w-full overflow-hidden">
           {/* Gambar Background */}
@@ -18,7 +18,7 @@
           {/* Overlay */}
 
           {/* Teks di atas gambar */}
-          <div className="relative z-10 flex h-full flex-col justify-center md:px-16 text-center">
+          <div className="relative z-10 flex h-full flex-col justify-center md:px-16 mt-10 text-center">
             <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-md">
               Bersama Wujudkan <br />Lingkungan Bersih & Bernilai
             </h1>

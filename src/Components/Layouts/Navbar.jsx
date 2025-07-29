@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi';
+import logo from '/public/logo1.svg'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,10 +21,10 @@ const Navbar = () => {
 
   return (
     <nav className='fixed top-0 left-0 right-0 bg-white shadow-md z-50'>
-        <div className='container mx-auto flex justify-between items-center px-5 md:px-10 lg:px-20 h-15'>
+        <div className='container mx-auto flex justify-between items-center px-5 md:px-10 lg:px-20 h-20'>
             {/* Logo */}
-            <div>
-                <h1 className='text-2xl font-bold'>LOGO</h1>
+            <div className='flex items-center gap-5'>
+                <img src={logo} alt="" className='w-15'/>
             </div>
 
             {/* Mobile Menu Button */}

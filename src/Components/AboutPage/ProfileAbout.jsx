@@ -1,12 +1,12 @@
 import React from 'react'
-import Image from '../../assets/images/manfaatpage/bandarkhalipah3.webp'
+import Image from '../../assets/images/logo.jpg'
 
 
 const ProfileAbout = () => {
   return (
     <section className='container mx-auto section-spacing'>
         <div className='grid lg:grid-cols-2 items-center gap-10'>
-            <div className='space-y-4'>
+            <div className='order-2 md:order-1 space-y-4'>
                 <h4 className='font-bold'>Menjaga Lingkungan, Membangun Masa Depan</h4>
                 <h1 className='text-3xl font-bold'>About Bank Sampah Bandar Khalipah</h1>
                 <p className='text-justify'>
@@ -15,8 +15,8 @@ const ProfileAbout = () => {
                     Bergabunglah bersama kami dalam gerakan peduli lingkungan ini. Setor sampah, rawat bumi, dan ciptakan nilai untuk masa depan yang lebih baik.
                 </p>
             </div>
-            <div className=''>
-                <img src={Image} alt="sampah" className='w-full h-[60vh] md:h-[80vh] object-cover' />
+            <div className='order-1 md:order-2'>
+                <img src={Image} alt="sampah" className='w-full h-[40vh] md:h-[80vh] object-cover' />
             </div>
         </div>
     </section>
