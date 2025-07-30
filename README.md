@@ -32,15 +32,9 @@
    ```bash
    npm run dev
 4. Buka http://localhost:5173 di browser.
-    ├── public/
-    ├── src/
-    │   ├── assets/
-    │   ├── components/
-    │   ├── pages/
-    │   ├── Data/
-    │   └── App.jsx
-    ├── index.html
-    └── vite.config.js
+<pre> 
+   ## 📁 Struktur Folder <code> ├── public/ ├── src/ │ ├── assets/ │ ├── components/ │ ├── pages/ │ ├── Data/ │ └── App.jsx ├── index.html └── vite.config.js </code> 
+</pre>
 
 ## 🏡 Tentang Proyek
 Website ini dibuat sebagai sarana publikasi dan edukasi terkait kegiatan serta visi dari Bank Sampah Bandar Khalipah – mendorong masyarakat untuk peduli terhadap lingkungan melalui pengelolaan sampah yang bertanggung jawab.
