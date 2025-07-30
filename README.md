@@ -32,8 +32,9 @@
    ```bash
    npm run dev
 4. Buka http://localhost:5173 di browser.
+   
+## 📁 Struktur Folder 
 <pre> 
-   ## 📁 Struktur Folder 
    <code> 
       ├── public/
       ├── src/
