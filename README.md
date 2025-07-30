@@ -33,7 +33,18 @@
    npm run dev
 4. Buka http://localhost:5173 di browser.
 <pre> 
-   ## 📁 Struktur Folder <code> ├── public/ ├── src/ │ ├── assets/ │ ├── components/ │ ├── pages/ │ ├── Data/ │ └── App.jsx ├── index.html └── vite.config.js </code> 
+   ## 📁 Struktur Folder 
+   <code> 
+      ├── public/
+      ├── src/
+      │   ├── assets/
+      │   ├── components/
+      │   ├── pages/
+      │   ├── Data/
+      │   └── App.jsx
+      ├── index.html
+      └── vite.config.js
+   </code> 
 </pre>
 
 ## 🏡 Tentang Proyek
