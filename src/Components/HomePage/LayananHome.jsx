@@ -25,18 +25,16 @@ const layanan = [
 const LayananHome = () => {
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='space-y-10 lg:px-8 text-center'>
-            <div className='space-y-6'>
-                <h1 className='text-4xl font-bold'>
-                    Program Bank Sampah
-                </h1>
-                <p>
-                    Dengan dukungan warga, bank sampah hadir dalam membantu untuk lingkungan yang sehat dan berkelanjutan. <br />Melalui sistem tabungan sampah, warga dapat menabung sampah anorganik dan mendapatkan nilai ekonomis <br />dari sampah yang mereka setor. 
-                </p>
-            </div>
+        <div className='space-y-5 md:space-y-10 lg:px-8 text-center'>
+            <h1 className='text-2xl md:text-4xl font-bold'>
+                Program Bank Sampah
+            </h1>
+            <p>
+                Dengan dukungan warga, bank sampah hadir dalam membantu untuk lingkungan yang sehat dan berkelanjutan. <br className="hidden md:block"/>Melalui sistem tabungan sampah, warga dapat menabung sampah anorganik dan mendapatkan nilai ekonomis <br className="hidden md:block"/>dari sampah yang mereka setor. 
+            </p>
             <div className='grid md:grid-cols-3 gap-5 md:gap-3'>
                 {layanan.map((item) => (
-                    <div key={item.id} className='text-2xl space-y-2 md:space-y-4'>
+                    <div key={item.id} className='text-xl md:text-2xl space-y-2 md:space-y-4'>
                         <p className="flex justify-center">{item.icon}</p>
                         <h2 className='font-semibold'>{item.name}</h2>
                         <p className='text-base'>{item.desc}</p>

@@ -8,12 +8,14 @@ import './App.css'
 import Kegiatan from './Page/Kegiatan.jsx'
 import Education from './Page/Education.jsx'
 import DetailKegiatan from './Components/KegiatanPage/DetailKegiatan.jsx'; 
+import Partner from './Page/Partner.jsx'
 
 function App() {
   return (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/partner" element={<Partner />} />
         <Route path="/edu" element={<Education />} />
         <Route path="/kegiatan" element={<Kegiatan />} />
         <Route path="/detail-kegiatan/:id" element={<DetailKegiatan />} />

@@ -22,7 +22,7 @@
             <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-md">
               Bersama Wujudkan <br />Lingkungan Bersih & Bernilai
             </h1>
-            <p className="text-white mt-4 md:text-lg drop-shadow-sm">
+            <p className="text-white mt-4 drop-shadow-sm">
               Setor sampah, rawat bumi, dan ubah limbah menjadi tabungan. Bergabunglah bersama kami <br />dalam gerakan sadar lingkungan di Bandar Khalipah.
             </p>
           </div>

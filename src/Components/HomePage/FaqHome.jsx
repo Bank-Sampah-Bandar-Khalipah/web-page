@@ -42,12 +42,12 @@ const Faq = () => {
   return (
     <section className='container mx-auto section-spacing'>   
         <div className="space-y-5 md:space-y-10">
-            <h1 className='font-bold text-4xl text-center'>
-                FAQ      
+            <h1 className='font-bold text-2xl md:text-4xl text-center'>
+                Pertanyaan Umum      
             </h1>
 
             <p className="text-center">
-                Find answers to frequently asked question about Circularity Center USU
+                Temukan Pertanyaan Umum Mengenai Bank Sampah Bandar Khalipah
             </p>
 
             <div className="">
@@ -96,7 +96,15 @@ const Faq = () => {
             <div className="flex flex-col items-center gap-4">
                 <h2>Masih ada pertanyaan?</h2>
                 <p>Hubungi Kami Untuk Informasi Selanjutnya</p>
-                <Button>Kontak</Button>
+                <a
+                href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bermitra%20dengan%20Bank%20Sampah"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <Button className='gap-2'>
+                    Hubungi Kami
+                </Button>
+                </a>           
             </div>
         </div>
 
