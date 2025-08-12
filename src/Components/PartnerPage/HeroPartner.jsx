@@ -12,7 +12,7 @@ export default function HeroPartner() {
             <h1 className='text-center text-4xl md:text-6xl font-bold'>Membangun Masa Depan <br />Berkelanjutan Bersama</h1>
             <p className='md:text-xl text-center'>Inisiatif daur ulang berbasis komunitas yang mengubah lingkungan kita <br />menjadi lingkungan berkelanjutan dan bebas sampah melalui aksi sukarela <br />dan inovasi.</p>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bermitra%20dengan%20Bank%20Sampah"
+              href="https://wa.me/6285361816750?text=Halo%20saya%20ingin%20bermitra%20dengan%20Bank%20Sampah"
               target="_blank"
               rel="noopener noreferrer"
             >

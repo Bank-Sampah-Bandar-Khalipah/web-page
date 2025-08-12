@@ -41,7 +41,7 @@ const Faq = () => {
 
   return (
     <section className='container mx-auto section-spacing'>   
-        <div className="space-y-5 md:space-y-10">
+        <div className="space-y-5 md:space-y-8">
             <h1 className='font-bold text-2xl md:text-4xl text-center'>
                 Pertanyaan Umum      
             </h1>
@@ -97,7 +97,7 @@ const Faq = () => {
                 <h2>Masih ada pertanyaan?</h2>
                 <p>Hubungi Kami Untuk Informasi Selanjutnya</p>
                 <a
-                href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bermitra%20dengan%20Bank%20Sampah"
+                href="https://wa.me/6285361816750?text=Halo%20saya%20ingin%20bermitra%20dengan%20Bank%20Sampah"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
