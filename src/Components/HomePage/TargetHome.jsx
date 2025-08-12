@@ -5,15 +5,14 @@ const TargetHome = () => {
   const target = [
     {
       id: 1,
-      total: 20,
+      total: 8,
       desc: 'Kepala Keluarga Aktif',
       suffix: '+',
     },
     {
       id: 2,
-      total: 10,
-      desc: 'Nasabah Terdaftar',
-      suffix: '+',
+      total: 2,
+      desc: 'RT',
     },
     {
       id: 3,
@@ -30,20 +29,19 @@ const TargetHome = () => {
   ]
 
   const sampah = [
-    {id:1, total:200, desc:"Sampah Plastik", suffix:"+"},
-    {id:2, total:100, desc:"Sampah Kertas", suffix:"+"},
-    {id:3, total:100, desc:"Sampah Kardus", suffix:"+"},
+    {id:1, total:100, desc:"Sampah Kertas", suffix:"kg+"},
+    {id:2, total:20, desc:"Sampah Kardus", suffix:"kg+"},
   ]
 
   return (
     <section className='container mx-auto section-spacing'>
       <div>
-        <h1 className='text-4xl font-bold text-center'>Pencapaian Kami</h1>
+        <h1 className='text-3xl md:text-5xl font-bold text-center'>Pencapaian Kami</h1>
         <div className='grid grid-cols-2 md:grid-cols-4 mt-10 gap-5'>
           {target.map((item) => (
             <div
               key={item.id}
-              className='flex flex-col items-center gap-2 text-5xl font-semibold'
+              className='flex flex-col items-center gap-2 text-4xl font-semibold'
             >
               <CountUp
                 end={item.total}
@@ -57,12 +55,12 @@ const TargetHome = () => {
           ))}
         </div>
 
-        <h1 className='mt-10 text-center text-3xl font-semibold'>Total Sampah Terkumpul</h1>
-        <div className='grid grid-cols-3'>
+        <h2 className='mt-10 text-center text-xl md:text-3xl font-semibold'>Total Sampah Terkumpul</h2>
+        <div className='grid grid-cols-2'>
             {sampah.map((item) => (
               <div
                 key={item.id}
-                className='flex flex-col items-center gap-2 text-5xl font-semibold mt-5'
+                className='flex flex-col items-center gap-2 text-4xl font-semibold mt-5'
               >
                 <CountUp
                   end={item.total}

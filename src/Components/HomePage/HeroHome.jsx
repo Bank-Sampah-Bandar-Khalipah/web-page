@@ -2,10 +2,15 @@ import { useEffect, useState } from 'react';
 import HeroImage1 from '../../assets/images/manfaatpage/bandarkhalipah2.webp';
 import HeroImage2 from '../../assets/images/manfaatpage/bandarkhalipah.webp';
 import HeroImage3 from '../../assets/images/partisipasi1.webp';
+import { useNavigate } from 'react-router-dom'
+import { IoPeopleOutline  } from "react-icons/io5";
+import Button from "../Ui/Button"
+
 
 const images = [HeroImage1, HeroImage2, HeroImage3];
 
 const HeroHome = () => {
+  const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Ubah slide tiap 5 detik
@@ -29,13 +34,20 @@ const HeroHome = () => {
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-center text-center md:text-left px-4 md:px-16">
+      <div className="relative z-10 flex h-full flex-col justify-center text-center md:text-left px-4 md:px-16 space-y-4">
         <h1 className="text-white text-xl md:text-3xl font-bold drop-shadow-md md:w-1/2">
           Selamat Datang di <br /><span className='text-4xl md:text-6xl'>Bank Sampah Bandar Khalipah</span>
         </h1>
-        <p className="text-white mt-4 text-lg md:text-xl max-w-2xl drop-shadow-sm">
+        <p className="text-white max-w-2xl drop-shadow-sm">
           Ayo jaga lingkungan dengan mengumpulkan sampah.
         </p>
+        <Button
+          className="gap-2 w-fit px-4 inline-flex items-center mx-auto md:mx-0"
+          onClick={() => navigate('/partner')}
+        >
+          <IoPeopleOutline />
+          Bermitra Dengan Kami
+        </Button>
       </div>
 
       {/* Dot Indicator */}

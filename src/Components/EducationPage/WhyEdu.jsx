@@ -11,17 +11,21 @@ const WhyEdu = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid md:grid-cols-2 gap-5 items-center h-[420px]'>
+        <div className='grid md:grid-cols-2 gap-8 items-center'>
             <div>
-                <img src={Image} alt="foto" className='h-[400px] w-full object-cover'/>
+                <img src={Image} alt="foto" className='h-[400px] w-full object-cover rounded-lg'/>
             </div>
             <div className='space-y-4'>
                 <h1 className='text-4xl font-bold'>Pentingnya Bank Sampah</h1>
-                <p className='text-justify'>Bank sampah hadir sebagai solusi atas dua masalah utama: penumpukan sampah dan keterbatasan ekonomi warga. Melalui edukasi dan sistem yang teratur, masyarakat diajak melihat sampah sebagai aset, bukan limbah, sehingga tercipta kebiasaan baru yang mendukung lingkungan bersih dan peningkatan kesejahteraan.</p>
-                <div>
+                <p className='text-justify'>
+                    Bank sampah hadir sebagai solusi atas dua masalah utama: penumpukan sampah dan keterbatasan ekonomi warga.
+                    Melalui edukasi dan sistem yang teratur, masyarakat diajak melihat sampah sebagai aset, bukan limbah,
+                    sehingga tercipta kebiasaan baru yang mendukung lingkungan bersih dan peningkatan kesejahteraan.
+                </p>
+                <div className='space-y-2'>
                     {point.map((item) => (
-                        <div key={item.id} className='flex items-center gap-2'>
-                            <p>-</p>
+                        <div key={item.id} className='flex items-start gap-2'>
+                            <span>-</span>
                             <p>{item.point}</p>
                         </div>
                     ))}

@@ -15,8 +15,8 @@ const Button = ({ children, to, onClick, className = "", type = "button", size =
     md: "h-12 px-6 text-base",
   };
 
-  const baseClasses = `inline-flex items-center justify-center bg-[#0B1D51] text-white rounded-3xl hover:bg-white 
-    cursor-pointer transition-all hover:text-black hover:border-2`;
+  const baseClasses = `inline-flex items-center justify-center bg-[#0B1D51] text-white rounded-lg 
+    cursor-pointer transition-all hover:bg-[#1E3A8A] hover:border-2`;
 
   const combinedClasses = `${baseClasses} ${sizeClasses[size] || sizeClasses.md} ${className}`;
 

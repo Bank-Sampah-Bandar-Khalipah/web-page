@@ -25,10 +25,12 @@ const LocHome = () => {
         title: "Hubungi Kami",
         desc: (
         <a
-            href="tel:+6281312345678"
+            href="https://wa.me/6285361816750?text=Halo%20saya%20ingin%20bertanya%20tentang%20Bank%20Sampah"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:underline"
         >
-            (+62) 813-1234-5678
+            (+62) 853-6181-6750 (Sony)
         </a>
         ),
     },
@@ -51,12 +53,12 @@ const LocHome = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='space-y-5 md:space-y-10'>
-            <h1 className='text-center md:text-left text-4xl font-bold'>
+        <div className='space-y-5 md:space-y-8'>
+            <h1 className='text-center text-2xl md:text-4xl font-bold'>
                 Hubungi Kami
             </h1>
-            <p className='text-center md:text-left'>
-                Kami siap membantu Anda, hubungi kami.
+            <p className='text-center'>
+                Siap membuat perbedaan bersama? Koordinator kemitraan kami siap mendiskusikan peluang kolaborasi <br className='hidden md:block'/>dan menjawab pertanyaan yang Anda miliki.
             </p>
             <div className='grid grid-cols-1 md:grid-cols-2 items-center space-y-4'>
                 <div className=''>
@@ -65,7 +67,6 @@ const LocHome = () => {
                             {item.icon}
                             <div className='space-y-2 text-base'>
                                 <h2 className='font-bold'>{item.title}</h2>
-                                <p>{item.tit}</p>
                                 <p>{item.desc}</p>
                             </div>
                         </div>
