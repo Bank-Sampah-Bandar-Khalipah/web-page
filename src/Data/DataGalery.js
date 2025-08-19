@@ -15,10 +15,9 @@ import Img14 from '../assets/images/proses-sampah1.webp'
 
 const dataGalery = () => {
     const kolom1 = [
-        {id:1, img: Img1},
+        {id:1, img: Img13},
         {id:2, img: Img2},
         {id:3, img: Img3},
-        {id:11, img: Img11},
     ]
 
     const kolom2 = [
@@ -26,14 +25,12 @@ const dataGalery = () => {
         {id:5, img: Img5},
         {id:6, img: Img6},
         {id:7, img: Img7},
-        {id:13, img: Img13},
     ]
 
     const kolom3 = [
         {id:8, img: Img8},
-        {id:9, img: Img9},
+        {id:9, img: Img12},
         {id:10, img: Img10},
-        {id:12, img: Img12},
     ]
 
     return {kolom1, kolom2, kolom3}

@@ -1,6 +1,6 @@
 import React from 'react'
 import CountUp from 'react-countup'
-import Image from '../../assets/images/proses-sampah.webp'
+import Image from '../../assets/images/sampah.webp'
 
 const AchivementEdu = () => {
 

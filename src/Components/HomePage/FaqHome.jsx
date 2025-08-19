@@ -6,6 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { BiMessageSquareDetail } from "react-icons/bi"
 import Button from "../Ui/Button";
+import Title from "../Ui/Title";
 
 const question = [
     {
@@ -41,10 +42,10 @@ const Faq = () => {
 
   return (
     <section className='container mx-auto section-spacing'>   
-        <div className="space-y-5 md:space-y-8">
-            <h1 className='font-bold text-2xl md:text-4xl text-center'>
+        <div className="space-y-5 md:space-y-10">
+            <Title>
                 Pertanyaan Umum      
-            </h1>
+            </Title>
 
             <p className="text-center">
                 Temukan Pertanyaan Umum Mengenai Bank Sampah Bandar Khalipah
