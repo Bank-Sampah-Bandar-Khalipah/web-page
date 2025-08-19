@@ -1,6 +1,7 @@
 import { FaRecycle } from "react-icons/fa";
 import { FaTrashCan } from "react-icons/fa6";
 import { FaPeopleGroup } from "react-icons/fa6";
+import Title from "../Ui/Title";
 const layanan = [
     {
         id:1,
@@ -26,9 +27,9 @@ const LayananHome = () => {
   return (
     <section className='container mx-auto section-spacing'>
         <div className='space-y-5 md:space-y-10 lg:px-8 text-center'>
-            <h1 className='text-2xl md:text-4xl font-bold'>
+            <Title>
                 Program Bank Sampah
-            </h1>
+            </Title>
             <p>
                 Dengan dukungan warga, bank sampah hadir dalam membantu untuk lingkungan yang sehat dan berkelanjutan. <br className="hidden md:block"/>Melalui sistem tabungan sampah, warga dapat menabung sampah anorganik dan mendapatkan nilai ekonomis <br className="hidden md:block"/>dari sampah yang mereka setor. 
             </p>

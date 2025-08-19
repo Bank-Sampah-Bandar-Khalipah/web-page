@@ -1,7 +1,6 @@
 import React from 'react'
 import dataGalery from '../../Data/DataGalery';
 
-
 const GaleryAbout = () => {
 
     const {kolom1, kolom2, kolom3} = dataGalery();
@@ -10,7 +9,7 @@ const GaleryAbout = () => {
     <section className='container mx-auto section-spacing'>
         <div className='space-y-10'>
             <h1 className='text-3xl font-bold'>Dokumentasi Kegiatan</h1>
-            <div class="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
                 <div className='space-y-4'>
                     {kolom1.map(item =>
                     <img key={item.id} src={item.img} alt={`img-${item.id}`} className='w-full h-80 object-cover' />
@@ -40,5 +39,4 @@ const GaleryAbout = () => {
     </section>
   )
 }
-
 export default GaleryAbout

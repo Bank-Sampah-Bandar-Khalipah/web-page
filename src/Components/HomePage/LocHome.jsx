@@ -2,6 +2,7 @@ import React from 'react'
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
+import Title from '../Ui/Title';
 
 const LocHome = () => {
 
@@ -54,9 +55,9 @@ const LocHome = () => {
   return (
     <section className='container mx-auto section-spacing'>
         <div className='space-y-5 md:space-y-8'>
-            <h1 className='text-center text-2xl md:text-4xl font-bold'>
+            <Title>
                 Hubungi Kami
-            </h1>
+            </Title>
             <p className='text-center'>
                 Siap membuat perbedaan bersama? Koordinator kemitraan kami siap mendiskusikan peluang kolaborasi <br className='hidden md:block'/>dan menjawab pertanyaan yang Anda miliki.
             </p>

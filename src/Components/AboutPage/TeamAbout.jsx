@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import dataTeam from "../../Data/DataTeam";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
+import Title from "../Ui/Title";
 
 const TeamAbout = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,10 +39,10 @@ const TeamAbout = () => {
     <section className="container mx-auto team-spacing">
       <div className="items-center gap-10 space-y-4">
         <h4 className="font-bold">Tim Kami</h4>
-        <h1 className="text-3xl font-bold">
-          Kenali Orang-Orang Hebat di Balik <br />
+        <Title className="text-left">
+          Kenali Orang-Orang Hebat di Balik <br className="hidden md:block"/>
           Bank Sampah Bandar Khalipah
-        </h1>
+        </Title>
 
         <div className="relative">
           <div
@@ -60,11 +61,13 @@ const TeamAbout = () => {
                   className="shrink-0 w-[350px] h-[280px] space-y-4 bg-white p-4"
                 >
                   <div className="flex">
+                  {item.image && (
                     <img
                       src={item.image}
                       alt={item.name}
                       className="w-16 h-16 rounded-full object-cover"
                     />
+                  )}
                   </div>
                   <div className="">
                     <h1 className="text-xl font-bold">{item.name}</h1>
