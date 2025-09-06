@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
-#root {
+body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Manrope", sans-serif; 
-  primary: #0B1D51;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
 }
 
 .text-primary {
@@ -13,13 +18,13 @@
 }
 
 .bg-primary {
-  color: #0B1D51;
+  background-color: #0B1D51;
 }
 
 .section-spacing {
-    @apply py-8 md:py-12 px-4 md:px-12;
+  @apply py-8 md:py-12 px-4 md:px-12;
 }
 
-.team-spacing{
-    @apply py-8 md:py-12 pl-4 md:pl-12;
+.team-spacing {
+  @apply py-8 md:py-12 pl-4 md:pl-12;
 }

@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className='container mx-auto flex justify-between items-center px-5 md:px-10 lg:px-20 h-20'>
             {/* Logo */}
             <div className='flex items-center gap-5'>
-                <img src={logo} alt="" className='w-15'/>
+                <img src={logo} alt="logo" className='w-15'/>
             </div>
 
             {/* Mobile Menu Button */}
@@ -36,7 +36,7 @@ const Navbar = () => {
             </button>
 
             {/* Dekstop */}
-            <div className='hidden md:flex items-center gap-10 font-bold'>
+            <div className='hidden md:flex items-center gap-10 font-semibold'>
                 {navItems.map((link, index) => (
                     <Link
                     key={index}

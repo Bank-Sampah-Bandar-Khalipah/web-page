@@ -6,14 +6,13 @@ import { useNavigate } from 'react-router-dom'
 import { IoPeopleOutline  } from "react-icons/io5";
 import Button from "../Ui/Button"
 
-
 const images = [HeroImage1, HeroImage2, HeroImage3];
 
 const HeroHome = () => {
   const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Ubah slide tiap 5 detik
+  // Ubah slide tiap
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -22,7 +21,7 @@ const HeroHome = () => {
   }, []);
 
   return (
-    <section className='container mx-auto relative h-[100vh] overflow-hidden'>
+    <section className='container mx-auto h-[100vh] overflow-hidden'>
       {/* Background Image */}
       <img
         src={images[currentIndex]}
