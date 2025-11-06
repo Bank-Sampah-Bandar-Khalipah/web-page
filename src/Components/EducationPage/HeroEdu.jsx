@@ -7,7 +7,7 @@ const HeroEdu = () => {
 
             <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
                 <iframe
-                    src="https://www.youtube.com/embed/5U9xVlyOg4A"
+                    src="https://www.youtube.com/embed/r6X5SRp2hvA"
                     title="YouTube video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
