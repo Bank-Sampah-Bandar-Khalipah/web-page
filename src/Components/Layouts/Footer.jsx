@@ -7,18 +7,18 @@ const Footer = () => {
   const footItem = [
     { id: 1, path: "https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr#", label: "Facebook", icon: <FaFacebook /> },
     { id: 2, path: "/", label: "Instagram", icon: <FaInstagram /> },
-    { id: 3, path: "/", label: "Whatsapp", icon: <FaWhatsapp /> },
-    { id: 4, path: "/", label: "Youtube", icon: <FaYoutube /> },
+    { id: 3, path: "https://wa.me/6285361816750?text=Halo%20saya%20ingin%20bertanya%20tentang%20Bank%20Sampah", label: "Whatsapp", icon: <FaWhatsapp /> },
+    { id: 4, path: "https://youtu.be/r6X5SRp2hvA?si=7fR-nCJC4euDwiK-", label: "Youtube", icon: <FaYoutube /> },
   ]
 
   const moreInfo = [
     { id: 1, label: "Jl. Besar Bandar Khalipah, Desa Bandar Khalipah, Kecamatan Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara, Indonesia." },
     { id: 2, label: "banksampahbandarkhalipah@gmail.com" },
-    { id: 3, label: "+628098980898" },
+    { id: 3, label: "(+62) 853-6181-6750 (Sony)" },
   ]
   
   return (
-    <section className='p-10 rounded-t-2xl bg-[#0B1D51]'>
+    <section className='p-5 md:p-10 rounded-t-2xl bg-[#0B1D51]'>
         <div className='bg-white container mx-auto section-spacing rounded-3xl shadow-2xl p-10'>
 
             {/* Konten Utama */}

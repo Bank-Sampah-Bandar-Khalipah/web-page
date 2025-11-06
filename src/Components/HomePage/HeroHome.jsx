@@ -11,23 +11,35 @@ const images = [HeroImage1, HeroImage2, HeroImage3];
 const HeroHome = () => {
   const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Ubah slide tiap
+  // Ubah slide tiap 5 detik
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setIsTransitioning(false);
+      }, 500); // Durasi fade out
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className='container mx-auto h-[100vh] overflow-hidden'>
-      {/* Background Image */}
-      <img
-        src={images[currentIndex]}
-        alt="hero"
-        className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000"
-      />
+    <section className='relative container mx-auto h-[100vh] overflow-hidden'>
+      {/* Background Images Stack */}
+      <div className="absolute inset-0">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`hero-${index + 1}`}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        ))}
+      </div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
@@ -52,11 +64,13 @@ const HeroHome = () => {
       {/* Dot Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {images.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`h-3 w-3 rounded-full ${
-              index === currentIndex ? 'bg-white' : 'bg-gray-400'
+            onClick={() => setCurrentIndex(index)}
+            className={`h-3 w-3 rounded-full transition-all duration-300 ${
+              index === currentIndex ? 'bg-white w-8' : 'bg-gray-400 hover:bg-gray-300'
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

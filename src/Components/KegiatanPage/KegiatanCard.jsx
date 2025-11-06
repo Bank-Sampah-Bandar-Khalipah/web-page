@@ -28,7 +28,7 @@ const KegiatanCard = () => {
   };
 
   return (
-    <section className="container mx-auto section-spacing">
+    <section className="container mx-auto py-2 md:py-4 px-4 md:px-12">
       {/* Filter Tabs */}
       <div className="flex items-center">
         <ul className="flex items-center gap-3 md:gap-6">
