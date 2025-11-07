@@ -66,6 +66,6 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /opt/bank-sampah
-            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose pull frontend
-            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose up -d frontend
+            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose pull web
+            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose up -d web
             sudo docker system prune -f
