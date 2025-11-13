@@ -7,7 +7,7 @@ import { LuHandshake } from "react-icons/lu";
 export default function HeroPartner() {
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='flex flex-col items-center mt-20 space-y-5'>
+        <div className='flex flex-col items-center mt-10 space-y-5'>
             <p className='bg-gradient-to-r from-[#0B1D51] to-[#1E3A8A] rounded-2xl font-semibold px-3 py-1 text-white'>Kemitraan Komunitas</p>
             <h1 className='text-center text-3xl md:text-5xl font-bold'>Membangun Masa Depan <br />Berkelanjutan Bersama</h1>
             <p className='text-center'>Sebagai pengelola Bank Sampah Bandar Khalipah BOHAI menggerakkan komunitas <br />untuk menciptakan lingkungan berkelanjutan dan bebas sampah melalui aksi sukarela dan inovasi.</p>
