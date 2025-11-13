@@ -1,22 +1,35 @@
-// Tambahan: import useNavigate dari react-router-dom
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import dataBlog from "../../Data/DataBlog";
-import { getFirstSentence } from "../Utils/GetFirstSentence"; // tambahkan ini
+import { getFirstSentence } from "../Utils/GetFirstSentence";
 
 const ITEMS_PER_PAGE = 6;
+
+const tabs = [
+  { key: "all", label: "Semua" },
+  { key: "sosialisasi", label: "Sosialisasi" },
+  { key: "edukasi", label: "Edukasi" },
+];
 
 const KegiatanCard = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
-  const navigate = useNavigate(); // inisialisasi navigate
+  const navigate = useNavigate();
 
+  // Filter data berdasarkan kategori
   const filteredData =
     activeTab === "all"
       ? dataBlog
-      : dataBlog.filter((item) => item.kategori === activeTab);
+      : dataBlog.filter(
+          (item) => item.kategori?.toLowerCase() === activeTab.toLowerCase()
+        );
 
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const totalPages = Math.max(1, Math.ceil(filteredData.length / ITEMS_PER_PAGE));
+
+  // Reset halaman kalau tab berubah
+  useEffect(() => {
+    if (currentPage > totalPages) setCurrentPage(1);
+  }, [activeTab, filteredData.length, totalPages]);
 
   const displayedData = filteredData.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
@@ -28,80 +41,104 @@ const KegiatanCard = () => {
   };
 
   return (
-    <section className="container mx-auto py-2 md:py-4 px-4 md:px-12">
-      {/* Filter Tabs */}
-      <div className="flex items-center">
-        <ul className="flex items-center gap-3 md:gap-6">
-          {["all", "sosialisasi", "edukasi"].map((type) => (
-            <li key={type}>
+    <section className="container mx-auto py-8 px-4 md:px-12">
+      {/* Tabs Filter */}
+      <div className="flex justify-center mb-6">
+        <ul className="flex flex-wrap items-center justify-center gap-3 md:gap-5 bg-[#F7F9FC] p-3 rounded-full">
+          {tabs.map((tab) => (
+            <li key={tab.key}>
               <button
                 onClick={() => {
-                  setActiveTab(type);
+                  setActiveTab(tab.key);
                   setCurrentPage(1);
                 }}
-                className={`p-4 rounded-full font-semibold transition hover:underline ${
-                  activeTab === type ? "bg-[#DFE9F8]" : ""
+                className={`px-5 py-2 md:px-7 md:py-3 rounded-full font-medium transition-all duration-200 ${
+                  activeTab === tab.key
+                    ? "bg-[#0A2050] text-white shadow-md"
+                    : "bg-white text-gray-700 hover:bg-[#E9EFFD]"
                 }`}
               >
-                {type === "all"
-                  ? "Lihat Semua"
-                  : type.charAt(0).toUpperCase() + type.slice(1)}
+                {tab.label}
               </button>
             </li>
           ))}
         </ul>
       </div>
-      
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
-        {displayedData.map((item) => {
-          // Ambil konten text pertama
-          const firstText = item.konten.find((kontenItem) => kontenItem.type === "text")?.content || "";
-          // Ambil kalimat pertama
-          const firstSentence = firstText.split(".")[0] + ".";
 
-          return (
-            <div
-              key={item.id}
-              onClick={() => navigate(`/detail-kegiatan/${item.id}`)}
-              className="text-lg space-y-4 rounded-md shadow-md cursor-pointer hover:shadow-lg transition"
-            >
-              <img
-                src={
-                  item.konten.find((kontenItem) => kontenItem.type === "image")?.content ||
-                  "/default.jpg"
-                }
-                alt={item.name}
-                className="rounded-md h-60 w-full object-cover"
-              />
-              <p className="font-semibold px-4">{item.name}</p>
-              <p className="text-base/loose opacity-50 px-4 py-2">
-                {firstSentence}
-              </p>
-            </div>
-          );
-        })}
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {displayedData.length === 0 ? (
+          <div className="col-span-full text-center text-gray-500 py-12">
+            Belum ada konten pada kategori ini.
+          </div>
+        ) : (
+          displayedData.map((item) => {
+            const firstText =
+              item.konten.find((kontenItem) => kontenItem.type === "text")
+                ?.content || "";
+            const firstSentence = getFirstSentence(firstText);
+
+            return (
+              <div
+                key={item.id}
+                onClick={() => navigate(`/detail-kegiatan/${item.id}`)}
+                className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer flex flex-col"
+              >
+                {/* Gambar */}
+                <div className="relative">
+                  <img
+                    src={
+                      item.konten.find((k) => k.type === "image")?.content ||
+                      "/default.jpg"
+                    }
+                    alt={item.name}
+                    className="w-full h-56 object-cover"
+                  />
+                  <span className="absolute top-4 left-4 bg-[#2F6FED] text-white text-sm font-semibold px-4 py-1.5 rounded-full">
+                    {item.kategori || "Kategori"}
+                  </span>
+                </div>
+
+                {/* Konten */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="font-semibold text-lg text-[#0A2050] mb-2 line-clamp-2">
+                    {item.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
+                    {firstSentence}
+                  </p>
+                  <span className="text-[#0A2050] font-semibold text-sm mt-auto flex items-center gap-1 hover:underline">
+                    Baca Selengkapnya →
+                  </span>
+                </div>
+              </div>
+            );
+          })
+        )}
       </div>
 
-
       {/* Pagination */}
-      <div className="flex justify-center mt-12 space-x-2">
+      <div className="flex justify-center items-center space-x-2 mt-12">
         <button
-          className="text-primary text-4xl"
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
+          className={`px-6 py-2 rounded-full border border-[#E0E3EB] text-[#0A2050] font-medium ${
+            currentPage === 1
+              ? "opacity-40 cursor-not-allowed"
+              : "hover:bg-[#E9EFFD]"
+          }`}
         >
-          &lt;
+          Sebelumnya
         </button>
 
-        {Array.from({ length: totalPages }, (_, idx) => idx + 1).map((page) => (
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}
             onClick={() => handlePageChange(page)}
-            className={`px-2 font-semibold ${
+            className={`w-10 h-10 flex items-center justify-center rounded-full font-semibold transition ${
               currentPage === page
-                ? "text-primary border-b-3 border-primary"
-                : "text-black"
+                ? "bg-[#0A2050] text-white"
+                : "border border-[#E0E3EB] text-[#0A2050] hover:bg-[#E9EFFD]"
             }`}
           >
             {page}
@@ -109,11 +146,15 @@ const KegiatanCard = () => {
         ))}
 
         <button
-          className="text-primary text-4xl"
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
+          className={`px-6 py-2 rounded-full border border-[#E0E3EB] text-[#0A2050] font-medium ${
+            currentPage === totalPages
+              ? "opacity-40 cursor-not-allowed"
+              : "hover:bg-[#E9EFFD]"
+          }`}
         >
-          &gt;
+          Selanjutnya
         </button>
       </div>
     </section>

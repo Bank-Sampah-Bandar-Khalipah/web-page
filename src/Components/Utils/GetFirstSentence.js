@@ -1,11 +1,9 @@
-export const getFirstSentence = (descArray) => {
-  if (!descArray || descArray.length === 0) return "";
+export const getFirstSentence = (text) => {
+  if (!text || typeof text !== "string") return "";
 
-  // Ambil paragraf pertama
-  const paragraph = descArray[0];
+  // Split berdasarkan titik, tanda seru, atau tanda tanya
+  const match = text.match(/[^.!?]+[.!?]/);
 
-  // Split berdasarkan titik, dan ambil kalimat pertama
-  const firstSentence = paragraph.split(".")[0];
-
-  return firstSentence.trim() + ".";
+  // Kalau ada kalimat pertama, ambil itu; kalau tidak, potong 120 huruf
+  return match ? match[0].trim() : text.slice(0, 120) + "...";
 };
