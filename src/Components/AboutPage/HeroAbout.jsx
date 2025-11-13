@@ -18,7 +18,7 @@
           {/* Overlay */}
 
           {/* Teks di atas gambar */}
-          <div className="relative z-10 flex h-full flex-col justify-center md:px-16 mt-10 text-center">
+          <div className="relative z-10 flex h-full flex-col justify-center md:px-16 mt-5 text-center">
             <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-md">
               Bersama BOHAI <br />Wujudkan Lingkungan Bersih & Bernilai
             </h1>
