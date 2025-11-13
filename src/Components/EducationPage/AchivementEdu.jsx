@@ -13,34 +13,7 @@ const AchivementEdu = () => {
 
   return (
     <section className='container mx-auto section-spacing'>
-        <div className='grid md:grid-cols-2 gap-8 items-center'>
-            <div className='space-y-4'>
-                <h1 className='text-4xl font-bold'>Sorot Pencapaian Pengelolaan Sampah</h1>
-                <p className='text-justify'>
-                    Dengan dukungan masyarakat dan sistem pengelolaan yang baik, kami berhasil mengumpulkan ratusan ton sampah dari berbagai wilayah.
-                    Data ini menunjukkan peningkatan signifikan setiap bulannya, sekaligus membuktikan bahwa kebiasaan memilah sampah
-                    dapat memberikan dampak nyata bagi lingkungan.
-                </p>
-                <div className='grid grid-cols-2 gap-4'>
-                    {sampah.map((item) => (
-                        <div key={item.id} className='items-center gap-3 my-5 text-3xl font-bold'>
-                            <CountUp
-                                end={item.total} 
-                                duration={2} 
-                                suffix={item.suffix}
-                                enableScrollSpy
-                                scrollSpyOnce
-                            />
-                            <p className='text-base font-normal'>{item.desc}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div>
-                <img src={Image} alt="foto" className='h-[400px] w-full object-cover rounded-lg'/>
-            </div>
-        </div>
-        <div className='text-center mt-20 space-y-4'>
+        <div className='text-center space-y-4'>
             <p>Bersama Kita Pilah, Bersama Kita Jaga Bandar Khalipah.</p>
             <h2 className='text-lg md:text-xl font-bold'>
                 Bank Sampah Bandar Khalipah bukan hanya tempat menyetorkan sampah,<br className='hidden lg:block'/> 

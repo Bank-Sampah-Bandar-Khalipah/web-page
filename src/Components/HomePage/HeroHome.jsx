@@ -47,10 +47,13 @@ const HeroHome = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col justify-center text-center md:text-left px-4 md:px-16 space-y-4">
         <h1 className="text-white text-xl md:text-3xl font-bold drop-shadow-md md:w-1/2">
-          Selamat Datang di <br /><span className='text-4xl md:text-6xl'>Bank Sampah Bandar Khalipah</span>
+          Selamat Datang di <br /><span className='text-4xl md:text-6xl'>BOHAI</span>
         </h1>
+        <p className="text-white text-xl md:text-3xl font-bold max-w-2xl drop-shadow-sm">
+          Berkah Orang Tua Harapan Anak Indonesia.
+        </p>
         <p className="text-white max-w-2xl drop-shadow-sm">
-          Ayo jaga lingkungan dengan mengumpulkan sampah.
+          Tim yang mengelola Bank Sampah Bandar Khalipah, bersama kami jaga lingkungan dengan mengumpulkan sampah.
         </p>
         <Button
           className="gap-2 w-fit px-4 inline-flex items-center mx-auto md:mx-0"

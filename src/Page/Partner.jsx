@@ -1,14 +1,16 @@
 import React from 'react'
 import HeroPartner from '../Components/PartnerPage/HeroPartner'
 import WhyPartner from '../Components/PartnerPage/WhyPartner'
-import LocHome from '../Components/HomePage/LocHome'
+import FlowPartner from '../Components/PartnerPage/FlowPartner'
+import PartnerInvitation from '../Components/PartnerPage/PartnerInvitation'
 
 function Partner() {
   return (
     <div>
         <HeroPartner/>
         <WhyPartner/>
-        <LocHome/>
+        <FlowPartner/>
+        <PartnerInvitation/>
     </div>
   )
 }

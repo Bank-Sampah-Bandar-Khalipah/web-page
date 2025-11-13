@@ -1,75 +1,131 @@
-import React from 'react'
-import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import React from "react";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import logo from '/logo1.svg'
+import logo from "/logo1.svg";
 
 const Footer = () => {
-  const footItem = [
-    { id: 1, path: "https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr#", label: "Facebook", icon: <FaFacebook /> },
-    { id: 2, path: "/", label: "Instagram", icon: <FaInstagram /> },
-    { id: 3, path: "https://wa.me/6285361816750?text=Halo%20saya%20ingin%20bertanya%20tentang%20Bank%20Sampah", label: "Whatsapp", icon: <FaWhatsapp /> },
-    { id: 4, path: "https://youtu.be/r6X5SRp2hvA?si=7fR-nCJC4euDwiK-", label: "Youtube", icon: <FaYoutube /> },
-  ]
-
-  const moreInfo = [
-    { id: 1, label: "Jl. Besar Bandar Khalipah, Desa Bandar Khalipah, Kecamatan Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara, Indonesia." },
-    { id: 2, label: "banksampahbandarkhalipah@gmail.com" },
-    { id: 3, label: "(+62) 853-6181-6750 (Sony)" },
-  ]
-  
   return (
-    <section className='p-5 md:p-10 rounded-t-2xl bg-[#0B1D51]'>
-        <div className='bg-white container mx-auto section-spacing rounded-3xl shadow-2xl p-10'>
-
-            {/* Konten Utama */}
-            <div className='flex flex-col md:flex-row gap-6'>
-            
-            {/* Logo & Deskripsi */}
-            <div className='space-y-4'>
-                <img src={logo} alt="Logo Bank Sampah" className='w-20'/>
-                <p>Ayo gabung bersama kami, kumpulkan sampah dan jaga lingkungan.</p>
+    <footer className="bg-[#0B1D51] text-white">
+      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* Logo & Deskripsi */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-white/90 rounded-xl shadow-md">
+              <img
+                src={logo}
+                alt="Bank Sampah BK"
+                className="w-8 h-8 object-contain"
+              />
             </div>
-            
-            {/* Sosial Media */}
-            <div className='space-y-4'>
-                <h2 className='font-semibold text-lg'>Sosial Media</h2>
-                <ul className='space-y-4'>
-                {footItem.map((item) => (
-                    <li key={item.id}>
-                    <Link 
-                        to={item.path} 
-                        className='flex items-center space-x-2 transition'
-                    >
-                        <span className='text-2xl'>{item.icon}</span>
-                        <span>{item.label}</span>
-                    </Link>
-                    </li>
-                ))}
-                </ul>
-            </div>
-            
-            {/* Kontak */}
-            <div className='space-y-4'>
-                <h2 className='font-semibold text-lg'>Kontak</h2>
-                <ul className='space-y-2'>
-                {moreInfo.map((item) => (
-                    <li key={item.id}>{item.label}</li>
-                ))}
-                </ul>
-            </div>
-            </div>
-
-            {/* Garis Pembatas & Copyright */}
-            <div className='mt-8'>
-            <hr className="border-t border-gray-300 mb-6" />
-            <p className='text-center font-bold'>
-                &copy; 2025 Bank Sampah Bandar Khalipah
-            </p>
-            </div>
-
+            <span className="font-bold text-lg">Bank Sampah BK</span>
+          </div>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Bersama kelola sampah, ciptakan lingkungan bersih untuk generasi
+            masa depan.
+          </p>
         </div>
-    </section>
-  )
-}
 
-export default Footer
+        {/* Navigasi Cepat */}
+        <div className="space-y-4">
+          <h3 className="font-semibold text-lg">Navigasi Cepat</h3>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>
+              <Link to="/" className="hover:text-blue-300 transition-colors">
+                Beranda
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/tentang"
+                className="hover:text-blue-300 transition-colors"
+              >
+                Tentang Kami
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/kerjasama"
+                className="hover:text-blue-300 transition-colors"
+              >
+                Kerjasama
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/edukasi"
+                className="hover:text-blue-300 transition-colors"
+              >
+                Edukasi
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="hover:text-blue-300 transition-colors">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Kontak */}
+        <div className="space-y-4">
+          <h3 className="font-semibold text-lg">Kontak</h3>
+          <ul className="space-y-3 text-sm text-gray-300">
+            <li className="flex items-start gap-3">
+              <FiMapPin className="flex-shrink-0 text-white text-lg mt-0.5" />
+              <span>
+                Jl. Besar Bandar Khalipah, Desa Bandar Khalipah, Percut Sei Tuan, Deli Serdang
+              </span>
+            </li>
+            <li className="flex items-center gap-3">
+              <FiPhone className="flex-shrink-0 text-white text-lg" />
+              <span>+62 853-6181-6750 (Sony)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <FiMail className="flex-shrink-0 text-white text-lg" />
+              <span>banksampahbandarkhalipah@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Ikuti Kami */}
+        <div className="space-y-4">
+          <h3 className="font-semibold text-lg">Ikuti Kami</h3>
+          <div className="flex gap-3">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-white/10 hover:bg-blue-500 transition-colors"
+            >
+              <FaFacebookF className="w-5 h-5" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-white/10 hover:bg-pink-500 transition-colors"
+            >
+              <FaInstagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-white/10 hover:bg-sky-400 transition-colors"
+            >
+              <FaTwitter className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="border-t border-white/10 text-center py-6 text-sm text-gray-300">
+        © {new Date().getFullYear()} Bank Sampah Bandar Khalipah. All rights reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

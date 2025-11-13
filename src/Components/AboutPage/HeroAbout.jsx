@@ -20,10 +20,10 @@
           {/* Teks di atas gambar */}
           <div className="relative z-10 flex h-full flex-col justify-center md:px-16 mt-10 text-center">
             <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-md">
-              Bersama Wujudkan <br />Lingkungan Bersih & Bernilai
+              Bersama BOHAI <br />Wujudkan Lingkungan Bersih & Bernilai
             </h1>
             <p className="text-white mt-4 drop-shadow-sm">
-              Setor sampah, rawat bumi, dan ubah limbah menjadi tabungan. Bergabunglah bersama kami <br />dalam gerakan sadar lingkungan di Bandar Khalipah.
+              BOHAI (Berkah Orang Tua Harapan Anak Indonesia) adalah tim penggerak Bank Sampah Bandar Khalipah yang mengajak masyarakat menyetor sampah, merawat bumi, dan menjadikannya tabungan bernilai.
             </p>
           </div>
         </div>
