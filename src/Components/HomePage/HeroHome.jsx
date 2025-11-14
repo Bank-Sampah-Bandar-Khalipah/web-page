@@ -47,8 +47,8 @@ const HeroHome = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 md:px-16 space-y-4 w-full">
         <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold drop-shadow-md leading-tight">
-          Selamat Datang di website<br />
-          <span className="text-4xl md:text-6xl text-[#E9EFFD]">BOHAI</span>
+          Selamat Datang di Website<br />
+          <span className="text-4xl md:text-6xl">BOHAI</span>
         </h1>
         <p className="text-white text-lg md:text-2xl font-semibold drop-shadow-sm">
           Berkah Orang Tua Harapan Anak Indonesia.
