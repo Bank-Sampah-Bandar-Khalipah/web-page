@@ -11,14 +11,14 @@ const Footer = () => {
         {/* Logo & Deskripsi */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-white/90 rounded-xl shadow-md">
+            <div className="p-2 bg-white rounded-xl shadow-md">
               <img
                 src={logo}
                 alt="Bank Sampah BK"
                 className="w-8 h-8 object-contain"
               />
             </div>
-            <span className="font-bold text-lg">Bank Sampah BK</span>
+            <span className="font-bold text-lg">Bank Sampah Bohai</span>
           </div>
           <p className="text-sm text-gray-300 leading-relaxed">
             Bersama kelola sampah, ciptakan lingkungan bersih untuk generasi
@@ -37,7 +37,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/tentang"
+                to="/about"
                 className="hover:text-blue-300 transition-colors"
               >
                 Tentang Kami
@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/kerjasama"
+                to="/partner"
                 className="hover:text-blue-300 transition-colors"
               >
                 Kerjasama
@@ -53,14 +53,14 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/edukasi"
+                to="/edu"
                 className="hover:text-blue-300 transition-colors"
               >
                 Edukasi
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="hover:text-blue-300 transition-colors">
+              <Link to="/kegiatan" className="hover:text-blue-300 transition-colors">
                 Blog
               </Link>
             </li>

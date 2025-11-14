@@ -21,8 +21,8 @@ const question = [
     },
     {
         id: 3,
-        question: "Bagaimana cara berpartisipasi?",
-        answer: "Anda dapat berpartisipasi dengan mengumpulkan sampah yang dapat didaur ulang dan membawanya ke bank sampah terdekat. Selain itu, Anda juga bisa mengikuti kegiatan edukasi yang kami adakan. Setiap kontribusi Anda sangat berarti untuk lingkungan.",
+        question: "Kenapa 'BOHAI'?",
+        answer: "BOHAI adalah singkatan dari Berkah Orang Tua Harapan Anak Indonesia, menggambarkan misi kami untuk menghadirkan keberkahan bagi orang tua dan menjadi harapan bagi anak-anak Indonesia.",
     },
         {
         id: 4,

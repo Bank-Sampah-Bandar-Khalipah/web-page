@@ -25,12 +25,15 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center h-16 px-5 md:px-10">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-4">
             <img
               src={logo}
               alt="Logo"
               className="h-9 w-auto transition-transform duration-200 hover:scale-105"
             />
+            <span className="font-heading font-bold md:text-lg text-foreground text-[#0A2050]">
+              Berkah Orang Tua Harapan Anak Indonesia
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

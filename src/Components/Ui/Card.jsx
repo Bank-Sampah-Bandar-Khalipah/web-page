@@ -17,10 +17,10 @@ const Card = ({ image, title, description, onClick, className = "" }) => {
           className="w-full h-56 object-cover transition-transform duration-700 ease-out hover:scale-105"
         />
       )}
-      <div className="p-6 text-justify space-y-3">
-        <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+      <div className="p-6 space-y-3">
+        <h3 className="text-xl text-start font-semibold text-gray-900">{title}</h3>
         {description && (
-          <p className="text-gray-600 leading-relaxed">{description}</p>
+          <p className="text-gray-600 text-justify leading-relaxed">{description}</p>
         )}
       </div>
     </div>
