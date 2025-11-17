@@ -5,7 +5,6 @@ import Navbar from '../Components/Layouts/Navbar'
 const Kegiatan = () => {
   return (
     <div>
-      <Navbar />
       <HeroKegiatan />
       <KegiatanCard />
     </div>
