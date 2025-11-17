@@ -1,14 +1,14 @@
-name: Bank-Sampah-Web CI/CD asd
+name: Bank-Sampah-Web CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
-build-and-dockerize:
+  build-and-dockerize:
     runs-on: ubuntu-latest
     environment: deployment
     outputs:
@@ -38,7 +38,7 @@ build-and-dockerize:
 
       - name: Export image tag
         id: meta
-        run: echo "IMAGE_TAG=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+        run: echo "IMAGE_TAG=${{ github.sha }}" >> "$GITHUB_OUTPUT"
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,6 +53,8 @@ build-and-dockerize:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /opt/bank-sampah
-            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose pull web
-            APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }} DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }} sudo docker-compose up -d web
+            export APP_TAG=${{ needs.build-and-dockerize.outputs.IMAGE_TAG }}
+            export DOCKER_HUB_USERNAME=${{ secrets.DOCKER_HUB_USERNAME }}
+            sudo docker-compose pull web
+            sudo docker-compose up -d web
             sudo docker system prune -f
