@@ -21,7 +21,6 @@ const ProfileAbout = () => {
             About Bank Sampah Bandar Khalipah
           </Title>
 
-          {/* Setiap paragraf ditampilkan terpisah */}
           {paragraphs.map((text, index) => (
             <p key={index} className='text-justify'>
               {text}
@@ -29,11 +28,20 @@ const ProfileAbout = () => {
           ))}
         </div>
 
-        <div className='order-1 md:order-2'>
+        <div className="order-1 md:order-2 w-full">
           <img
             src={Image}
             alt="sampah"
-            className='w-full h-[40vh] md:h-[80vh] object-cover'
+            className="
+              w-full
+              h-64
+              sm:h-80
+              md:h-[60vh]
+              lg:h-[70vh]
+              max-h-[700px]
+              object-contain
+              rounded-lg
+            "
           />
         </div>
       </div>

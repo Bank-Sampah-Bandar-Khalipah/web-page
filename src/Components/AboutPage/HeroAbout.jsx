@@ -3,29 +3,29 @@
 
   const HeroAbout = () => {
     return (
-      <section className='container mx-auto mb-12'>
-          <img
-            src={HeroImage}
-            alt="sampah"
-            className="absolute inset-0 h-[65vh] w-full object-cover"
-          />
-        
-        <div className="absolute inset-0 h-[65vh] bg-black opacity-50"></div>
-        
-        <div className="relative h-[60vh] w-full overflow-hidden">
-          {/* Gambar Background */}
+      <section className="relative container mx-auto mb-12">
+        {/* Background */}
+        <img
+          src={HeroImage}
+          alt="sampah"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-          {/* Overlay */}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-          {/* Teks di atas gambar */}
-          <div className="relative z-10 flex h-full flex-col justify-center md:px-16 mt-5 text-center">
-            <h1 className="text-white text-3xl md:text-5xl font-bold drop-shadow-md">
-              Bersama BOHAI <br />Wujudkan Lingkungan Bersih & Bernilai
-            </h1>
-            <p className="text-white mt-4 drop-shadow-sm">
-              BOHAI (Berkah Orang Tua Harapan Anak Indonesia) adalah tim penggerak Bank Sampah Bandar Khalipah yang mengajak masyarakat menyetor sampah, merawat bumi, dan menjadikannya tabungan bernilai.
-            </p>
-          </div>
+        {/* Content */}
+        <div className="relative z-10 flex min-h-[60vh] w-full flex-col items-center justify-center px-6 py-12 text-center sm:px-10 md:px-16">
+          <h1 className="text-3xl font-bold leading-tight text-white drop-shadow-md sm:text-4xl md:text-5xl">
+            Bersama BOHAI <br />
+            Wujudkan Lingkungan Bersih & Bernilai
+          </h1>
+
+          <p className="mt-4 max-w-4xl text-sm leading-relaxed text-white drop-shadow-sm sm:text-base md:text-lg">
+            BOHAI (Berkah Orang Tua Harapan Anak Indonesia) adalah tim penggerak Bank
+            Sampah Bandar Khalipah yang mengajak masyarakat menyetor sampah, merawat
+            bumi, dan menjadikannya tabungan bernilai.
+          </p>
         </div>
       </section>
     )
